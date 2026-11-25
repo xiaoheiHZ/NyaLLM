@@ -1,0 +1,25 @@
+{
+  "name": "NyaLLM — 纯原生安卓多窗 AI 工作台",
+  "short_name": "NyaLLM",
+  "description": "白纸浅粉，7.61 MB 零 WebView 纯原生安卓多窗 AI 工作台，支持斜切任务栏、双窗分屏、MCP、SKILL.md、DeepSeek/Tavily 双搜索与 Ollama 本地模型。",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 **白纸浅粉，纯原生安卓多窗 AI 工作台** — Android 8.0+，零 WebView，最新版 **v0.9.1**（7.61 MB APK）。
 
-- 🌐 **在线官网**：[https://nyallm.com/](https://nyallm.com/)
+- 🌐 **在线官网**：[https://nyallm.com/](https://nyallm.com/)（[下载中心](https://nyallm.com/download/) · [核心能力](https://nyallm.com/features/) · [8 大模型服务商](https://nyallm.com/providers/) · [更新日志](https://nyallm.com/changelog/) · [使用指南与 FAQ](https://nyallm.com/faq/)）
 - 📦 **APK 下载**：[GitHub Releases v0.9.1](https://github.com/xiaoheiHZ/NyaLLM/releases/tag/v0.9.1) · [直接下载 NyaLLM-0.9.1.apk](https://github.com/xiaoheiHZ/NyaLLM/releases/download/v0.9.1/NyaLLM-0.9.1.apk)
 - ⚡ **爱发电支持作者**：[https://ifdian.net/a/NyaLLM](https://ifdian.net/a/NyaLLM)（小黑子打篮球hz · 正在创作 NyaLLM 客户端）
 
