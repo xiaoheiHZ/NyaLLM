@@ -139,9 +139,9 @@
   const boopBtn = $("#mascot-boop");
   const boopBubble = $("#boop-bubble");
   const boopLines = [
-    "(=ↀωↀ=) 喵！NyaLLM 0.9.0 已上线",
-    "试试下方的四套官方配色实时换肤哦 ✦",
-    "后台窗口、时区问候和绘图产物全都有啦",
+    "(=ↀωↀ=) 喵！NyaLLM 0.9.1 补丁已上线",
+    "侧边卡片透视修得更顺眼啦 ✦",
+    "试试下方的四套官方配色实时换肤哦",
     "喜欢的话欢迎去爱发电给作者充点电 ⚡"
   ];
   let boopIdx = 0;
