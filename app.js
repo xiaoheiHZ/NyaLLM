@@ -276,7 +276,7 @@
 
     const userMsg = document.createElement("div");
     userMsg.className = "msg-user";
-    userMsg.textContent = "巡检 Alpine 3.21 RootFS 符号链接与 exec 权限，确认 busybox 和 apk 正常执行。";
+    userMsg.textContent = "巡检 Alpine 3.21 RootFS 符号链接与 exec 权限。";
     paneMessages.appendChild(userMsg);
 
     const wrap = document.createElement("div");
@@ -336,7 +336,7 @@
 
     paneMessages.appendChild(wrap);
     bindWorkTimelineEvents(wrap);
-    paneMessages.scrollTop = paneMessages.scrollHeight;
+    paneMessages.scrollTop = 0;
   }
 
   function bindWorkTimelineEvents(root) {
