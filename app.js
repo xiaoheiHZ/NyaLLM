@@ -831,7 +831,11 @@
   }
 
   const navLinks = $$(".nav-links a");
-  const sections = navLinks.map((a) => $(a.getAttribute("href"))).filter(Boolean);
+  const sections = navLinks
+    .map((a) => a.getAttribute("href") || "")
+    .filter((href) => href.startsWith("#") && href.length > 1)
+    .map((href) => $(href))
+    .filter(Boolean);
   if ("IntersectionObserver" in window && sections.length) {
     const navIo = new IntersectionObserver(
       (entries) => {
