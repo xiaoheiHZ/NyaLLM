@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NyaLLM 版本更新日志（v0.4.x → v0.9.1）— NyaLLM 官网</title>
-  <meta name="description" content="查看 NyaLLM 完整版本更新日志：从 0.4.x 零 WebView 纯原生重构、0.5.0 MCP 与手机助手、0.6.0 双窗分屏、0.7.0 联网搜索与子 Agent、0.8.0 锚定菜单、0.9.0 四套主题与 Tavily，到最新 0.9.1 侧边卡片透视修复。" />
-  <meta name="keywords" content="NyaLLM更新日志,NyaLLM 0.9.1,NyaLLM 0.9.0,NyaLLM历史版本,NyaLLM Changelog,安卓AI客户端更新" />
+  <title>NyaLLM 版本更新日志（v0.4.x → v1.0.2）— NyaLLM 官网</title>
+  <meta name="description" content="查看 NyaLLM 完整版本更新日志：从 0.4.x 零 WebView 纯原生重构、0.9.3 高斯模糊顶栏与矢量图标、1.0.0 隐私浏览器与 Linux 容器、1.0.1 7 档思考滑块与对话项目，到最新 1.0.2 RootFS exec 权限、工作极简模式与手势体验全面精修。" />
+  <meta name="keywords" content="NyaLLM更新日志,NyaLLM 1.0.2,NyaLLM 1.0.1,NyaLLM 1.0.0,NyaLLM历史版本,NyaLLM Changelog,安卓AI客户端更新" />
   <meta name="author" content="小黑子打篮球hz" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <link rel="canonical" href="https://nyallm.com/changelog/" />
@@ -13,8 +13,8 @@
   <meta property="og:locale" content="zh_CN" />
   <meta property="og:site_name" content="NyaLLM" />
   <meta property="og:url" content="https://nyallm.com/changelog/" />
-  <meta property="og:title" content="NyaLLM 版本更新日志（v0.4.x → v0.9.1）" />
-  <meta property="og:description" content="记录 NyaLLM 从纯原生零 WebView 重构到 0.9.1 全能多窗 AI 工作台的每一次演进。" />
+  <meta property="og:title" content="NyaLLM 版本更新日志（v0.4.x → v1.0.2）" />
+  <meta property="og:description" content="记录 NyaLLM 从纯原生零 WebView 重构到 1.0.2 本地 Linux 容器 + 隐私浏览器全能 Agent 工作台的每一次演进。" />
   <meta property="og:image" content="https://nyallm.com/icon-512.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="theme-color" content="#FFFFFF" />
@@ -46,7 +46,7 @@
       <a href="/" class="brand-lockup">
         <span class="brand-squircle"><img src="/assets/brand/nyallm-launcher.png" alt="NyaLLM 猫娘图标" width="34" height="34" /></span>
         <span class="brand-word">NyaLLM</span>
-        <span class="version-chip">0.9.1</span>
+        <span class="version-chip">1.0.2</span>
       </a>
       <nav class="nav-links" aria-label="主导航">
         <a href="/">首页</a>
@@ -65,7 +65,7 @@
     </div>
     <div class="mobile-nav" id="mobile-nav" hidden>
       <a href="/">首页工作台</a>
-      <a href="/download/">下载 NyaLLM 0.9.1 APK</a>
+      <a href="/download/">下载 NyaLLM 1.0.2 APK</a>
       <a href="/features/">核心能力详解</a>
       <a href="/providers/">8 大模型服务商</a>
       <a href="/changelog/">版本更新日志</a>
@@ -81,13 +81,13 @@
           <span class="bc-sep">/</span>
           <span aria-current="page">更新日志</span>
         </nav>
-        <span class="sub-badge">RELEASE EVOLUTION · v0.4.0 → v0.9.1</span>
+        <span class="sub-badge">RELEASE EVOLUTION · v0.4.0 → v1.0.2</span>
         <h1 class="sub-hero-title">NyaLLM 版本更新日志与演进历程</h1>
         <p class="sub-hero-lead">
-          从彻底移除 WebView 的 <code>0.4.0</code> 起，每个正式版本均经过真机/模拟器检验与 2,000 次状态机回归验证，全系列延续同签名支持无损覆盖安装。
+          从彻底移除 WebView 的 <code>0.4.0</code> 至今，每个正式版本均经过 Android 15 实机覆盖安装与 42+ 项自动化/2,000 次窗口状态机回归验证，全系列延续同签名支持无损覆盖升级。
         </p>
         <div class="sub-hero-actions">
-          <a href="/download/" class="btn btn-primary btn-lg">下载最新版 v0.9.1</a>
+          <a href="/download/" class="btn btn-primary btn-lg">下载最新版 v1.0.2</a>
           <a href="https://github.com/xiaoheiHZ/NyaLLM/releases" target="_blank" rel="noopener noreferrer" class="btn btn-subtle btn-lg">查看全部 GitHub Releases</a>
         </div>
       </div>
@@ -97,10 +97,50 @@
       <div class="container">
         <div class="timeline-grid">
           <article class="tl-item is-latest">
-            <div class="tl-ver"><span>0.9.1</span><small>最新 · 2026-11-25</small></div>
+            <div class="tl-ver"><span>1.0.2</span><small>最新 · 2026-11-26</small></div>
+            <div class="tl-body">
+              <h2>Linux 完整 RootFS / exec 权限、工作极简模式与交互手势全面精修</h2>
+              <p>调整 <code>targetSdkVersion 28</code> 开放私有目录 <code>exec</code> 权限并完整还原 4 大官方发行版 RootFS 符号链接与可执行位；工作模式默认开启极简模式，通过 <code>nya_load_tools</code> 按需动态加载工具省 Token；工具模式改为按需调用 <code>nya_web_search</code> 防止寒暄误搜；统一无灯泡每步实时思考链并修复多轮展开问题，底部统计升级为单行上下文占比（<code>输入 · 输出 · 上下文 % · tok/s</code>）；修复 2 列 Markdown 表格裁切、解决宽代码块/表格/图表/悬浮浏览器横滑与侧栏手势冲突，并将隐藏浏览器恢复胶囊移至右下角不挡字位置。</p>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-ver"><span>1.0.1</span><small>2026-11-26</small></div>
+            <div class="tl-body">
+              <h2>7 档思考滑块与动态指针、全屏状态栏/底栏轻高斯模糊与对话项目</h2>
+              <p>思考强度扩展至 7 档（Ultra 挂载独立子 Agent <code>nya_subagent</code>），粉白双色轨道联动输入栏动态指针；实现真正 Edge-to-Edge 状态栏与底栏 6.5–7.5dp 渐进轻高斯模糊并恢复 GPU 逐字模糊聚焦流式；新增「项目」（Projects）与无上限工具步数、双预览步骤时间线与「模型自动总结每小步」，升级 Linux 发行版/架构/VNC 桌面与隐私浏览器桌面 UA。</p>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-ver"><span>1.0.0</span><small>2026-11-26</small></div>
+            <div class="tl-body">
+              <h2>隐私 Agent 浏览器、极简胶囊工作台、Linux 容器、交互图表与用量热力图</h2>
+              <p>上线无痕内置隐私浏览器（<code>nya_browser</code> DOM 桥接）、<code>[ 聊天 | 工作 ]</code> 极简顶栏与单行悬浮胶囊输入、本地 Linux 容器、5 套双模提示词（NyaLLM / Codex / ChatGPT / Gemini / Claude）、对话内原生交互图表、单行历史对话预览、AI 记忆摘要与每日/每月/每年 Token 热力图及服务商实时余额查询。</p>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-ver"><span>0.9.3</span></div>
+            <div class="tl-body">
+              <h2>透明高斯模糊顶栏、官方矢量服务商图标与全套手机端快捷功能</h2>
+              <p>Android 12+ 实时背景高斯模糊顶栏、高对比度色彩与 7 家服务商官方矢量图标；上线不落盘临时对话、回复快捷操作栏（复制绿勾 / 系统 TTS 朗读 / 分享 / 重试）、语音听写、相机拍照、对话内搜索高亮、侧栏置顶/全文检索与导出 Markdown。</p>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-ver"><span>0.9.2</span></div>
+            <div class="tl-body">
+              <h2>前端视觉重构与完整原生 Markdown 渲染</h2>
+              <p>升级 <code>NyaStyle</code> 亚像素边框与配色预设实时色样；顶栏去框化、欢迎页猫娘徽章与矢量发送按钮；全面支持多级标题、引用块、列表、原生表格与紧凑代码块，修复多项明暗主题与抽屉拖动问题。</p>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-ver"><span>0.9.1</span><small>2026-11-25</small></div>
             <div class="tl-body">
               <h2>侧边窗口卡片透视与阴影细节修复</h2>
-              <p>对照视觉参考精修左侧斜切任务卡的透视几何：首张卡片保持接近水平，后续卡片顶边平滑向右下倾斜，两侧边维持竖直且阴影自然落在卡片下方。延续同一升级签名，可直接从 <code>0.4.x – 0.9.0</code> 覆盖安装。</p>
+              <p>精修左侧斜切任务卡透视几何：首张卡片接近水平，下方卡片顶边平滑向右下倾斜，两侧边维持竖直且阴影自然落在下方。</p>
             </div>
           </article>
 
@@ -108,47 +148,15 @@
             <div class="tl-ver"><span>0.9.0</span><small>2026-11-25</small></div>
             <div class="tl-body">
               <h2>后台窗口、时区问候、四套配色、Tavily 搜索与模型产物</h2>
-              <p>新增后台窗口统一管理与一键清理、横向循环窗口布局、NyaLLM / ChatGPT / Gemini / Claude 四套官方配色预设与自定义背景图、Tavily 深入搜索、对话分支新窗、本机持久记忆、自动总结标题、文档/表格编辑与 PNG 绘图产物，以及 Ollama 无 Key <code>/api/tags</code> 局域网模型发现。</p>
+              <p>新增后台窗口管理与清除、横向循环布局、四套官方配色与设备背景图、Tavily 深入搜索、对话分支新窗、本机持久记忆、自动总结标题、文档/表格编辑与 PNG 绘图产物，以及 Ollama 无 Key <code>/api/tags</code> 局域网模型发现。</p>
             </div>
           </article>
 
           <article class="tl-item">
-            <div class="tl-ver"><span>0.8.0</span></div>
+            <div class="tl-ver"><span>0.4–0.8</span></div>
             <div class="tl-body">
-              <h2>锚定动作菜单、流式保位与多服务商独立配置</h2>
-              <p>窗口、附件、工具、模型与历史菜单全部改为从按键旁就地展开；流式生成时锁住阅读位置并提供「回到最新」；多服务商独立凭据、请求头隔离与拉取模型搜索。</p>
-            </div>
-          </article>
-
-          <article class="tl-item">
-            <div class="tl-ver"><span>0.7.0</span></div>
-            <div class="tl-body">
-              <h2>联网搜索、子 Agent 与实时生成统计</h2>
-              <p>接入 DeepSeek Search 联网溯源、内置计算/时间工具与独立只读分析子 Agent、长对话自动摘要压缩，以及回复底部 <code>token/s</code> 速度统计与运行中角标。</p>
-            </div>
-          </article>
-
-          <article class="tl-item">
-            <div class="tl-ver"><span>0.6.0</span></div>
-            <div class="tl-body">
-              <h2>拖拽双窗工作台与多模态附件</h2>
-              <p>任务卡拖入主区即可创建双窗分屏组、宽屏并排可调分割线、多窗并行 SSE 流式输出，支持图片 / PDF / DOCX 附件预览与 ZIP 全量备份往返。</p>
-            </div>
-          </article>
-
-          <article class="tl-item">
-            <div class="tl-ver"><span>0.5.0</span></div>
-            <div class="tl-body">
-              <h2>浅粉原生界面、MCP 工具与手机助手</h2>
-              <p>上线完整 MCP Streamable HTTP 工具调用二次确认、<code>SKILL.md</code> 技能导入与按对话启用、Android 无障碍手机助手（含密码脱敏与敏感动作护栏）以及明暗双主题。</p>
-            </div>
-          </article>
-
-          <article class="tl-item">
-            <div class="tl-ver"><span>0.4.x</span></div>
-            <div class="tl-body">
-              <h2>零 WebView 纯原生重构与新版猫娘图标</h2>
-              <p>彻底移除 HTML/CSS/JS 与 WebView 依赖，纯 Java 原生控件重绘全部界面，并在 0.4.1 定稿白底粉描边猫娘标志图标。</p>
+              <h2>零 WebView 纯原生重构、猫娘图标、MCP、手机助手与双窗分屏工作台</h2>
+              <p>从 0.4.0 彻底移除 WebView、0.4.1 定稿新版猫娘图标，历经 0.5.0 MCP &amp; 手机助手护栏、0.6.0 拖拽双窗分屏与多模态附件、0.7.0 联网搜索与子 Agent、0.8.0 锚定动作菜单与流式阅读保位。</p>
             </div>
           </article>
         </div>
@@ -161,7 +169,7 @@
       <div class="footer-brand">
         <img src="/assets/brand/nyallm-launcher.png" alt="NyaLLM 图标" width="32" height="32" class="footer-icon" />
         <div>
-          <div class="footer-name">NyaLLM <span>0.9.1</span></div>
+          <div class="footer-name">NyaLLM <span>1.0.2</span></div>
           <p class="footer-note">白纸浅粉 · 纯原生安卓多窗 AI 工作台 · nyallm.com</p>
         </div>
       </div>

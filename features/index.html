@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NyaLLM 核心能力：安卓多窗分屏、MCP 工具、SKILL.md、双搜索与手机助手 — NyaLLM 官网</title>
-  <meta name="description" content="全面了解 NyaLLM 0.9.1 核心特性：零 WebView 纯原生架构、斜切任务栏与后台窗口管理、双窗分屏、MCP Streamable HTTP 工具调用、SKILL.md 技能、DeepSeek/Tavily 双搜索、绘图产物与无障碍手机助手安全护栏。" />
-  <meta name="keywords" content="NyaLLM功能,安卓多窗AI,零WebView安卓应用,Android MCP客户端,SKILL.md技能,DeepSeek Tavily双搜索,AI手机助手安全护栏,NyaStyle主题配色" />
+  <title>NyaLLM 1.0.2 核心能力：本地 Linux 容器、隐私浏览器、7 档思考、交互图表与手机助手 — NyaLLM 官网</title>
+  <meta name="description" content="全面了解 NyaLLM 1.0.2 核心特性：本地 Linux RootFS 容器与 exec 权限、工作极简模式按需加载工具、无痕隐私 Agent 浏览器、7 档思考强度与统一每步时间线、对话内原生交互图表、对话项目、Token 热力图与无障碍安全护栏。" />
+  <meta name="keywords" content="NyaLLM功能,安卓Linux容器,隐私Agent浏览器,工作极简模式,7档思考强度,对话内交互图表,Token热力图,Android MCP客户端,SKILL.md,NyaStyle 1.0" />
   <meta name="author" content="小黑子打篮球hz" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <link rel="canonical" href="https://nyallm.com/features/" />
@@ -13,8 +13,8 @@
   <meta property="og:locale" content="zh_CN" />
   <meta property="og:site_name" content="NyaLLM" />
   <meta property="og:url" content="https://nyallm.com/features/" />
-  <meta property="og:title" content="NyaLLM 核心能力 — 纯原生安卓多窗 AI 工作台" />
-  <meta property="og:description" content="斜切任务栏、双窗分屏、MCP、SKILL.md、双搜索引擎、文档/PNG 产物与无障碍安全护栏详解。" />
+  <meta property="og:title" content="NyaLLM 1.0.2 核心能力 — 纯原生安卓多窗 AI 工作台" />
+  <meta property="og:description" content="本地 Linux RootFS 容器、隐私 Agent 浏览器、工作极简模式、7 档思考滑块、对话内交互图表与全屏轻高斯模糊详解。" />
   <meta property="og:image" content="https://nyallm.com/icon-512.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="theme-color" content="#FFFFFF" />
@@ -46,7 +46,7 @@
       <a href="/" class="brand-lockup">
         <span class="brand-squircle"><img src="/assets/brand/nyallm-launcher.png" alt="NyaLLM 猫娘图标" width="34" height="34" /></span>
         <span class="brand-word">NyaLLM</span>
-        <span class="version-chip">0.9.1</span>
+        <span class="version-chip">1.0.2</span>
       </a>
       <nav class="nav-links" aria-label="主导航">
         <a href="/">首页</a>
@@ -65,7 +65,7 @@
     </div>
     <div class="mobile-nav" id="mobile-nav" hidden>
       <a href="/">首页工作台</a>
-      <a href="/download/">下载 NyaLLM 0.9.1 APK</a>
+      <a href="/download/">下载 NyaLLM 1.0.2 APK</a>
       <a href="/features/">核心能力详解</a>
       <a href="/providers/">8 大模型服务商</a>
       <a href="/changelog/">版本更新日志</a>
@@ -81,13 +81,13 @@
           <span class="bc-sep">/</span>
           <span aria-current="page">核心能力</span>
         </nav>
-        <span class="sub-badge">ARCHITECTURE &amp; CRAFT · 零 WEBVIEW 纯原生</span>
-        <h1 class="sub-hero-title">不止聊天，是随身可编程的安卓 Agent 工作台</h1>
+        <span class="sub-badge">ARCHITECTURE &amp; CRAFT · 1.0.2 纯原生 Agent 工作站</span>
+        <h1 class="sub-hero-title">不只是聊天框，是装进口袋的原生 Agent 工作站</h1>
         <p class="sub-hero-lead">
-          NyaLLM 彻底剥离 WebView 壳子，所有多窗手势、Markdown 渲染、超椭圆曲率控件与 Agent 工具调用确认全部使用纯原生 Java/Android 编写，在仅 7.61 MB 体积内提供桌面级 AI 工作台体验。
+          NyaLLM 1.0.2 彻底剥离 WebView，以纯原生 Java 在仅 7.87 MB 体积内集成完整 Linux RootFS 容器、隐私 Agent 浏览器、7 档思考强度与统一时间线、对话内原生交互图表、对话项目与全屏轻高斯模糊视觉系统。
         </p>
         <div class="sub-hero-actions">
-          <a href="/download/" class="btn btn-primary btn-lg">下载 NyaLLM 0.9.1 APK</a>
+          <a href="/download/" class="btn btn-primary btn-lg">下载 NyaLLM 1.0.2 APK</a>
           <a href="/providers/" class="btn btn-subtle btn-lg">查看支持的 8 大模型服务商</a>
         </div>
       </div>
@@ -97,68 +97,68 @@
       <div class="container">
         <div class="sub-grid-2">
           <article class="sub-card">
-            <span class="sub-badge">多窗调度 · 后台管理</span>
-            <h2>斜切任务栏、双窗分屏与横向循环布局</h2>
-            <p>左侧 3D 斜切任务卡可一眼辨别「已完成 / 后台推理中 / 等待确认」状态；把卡片拖入主区即可组合为可调分割线的双窗分屏，多窗口支持并行 SSE 流式输出。</p>
+            <span class="sub-badge">Linux 容器 · 极简省 Token</span>
+            <h2>本地 Linux 完整 RootFS、exec 权限与按需加载工具</h2>
+            <p>开放私有目录 <code>exec</code> 权限并完整还原 POSIX 符号链接、硬链接与可执行位，工作模式默认开启<strong>极简模式</strong>大幅减少首轮输入 Token。</p>
             <ul>
-              <li>顶栏「⋯」一键新开独立窗口、双窗分组、独占全屏或收起到后台窗口；</li>
-              <li>「后台窗口」面板支持统一查看、快速切回或一键安全清理且保留草稿；</li>
-              <li>「设置 → 窗口布局」支持在多任务斜切栏与横向循环模式之间自由切换。</li>
+              <li>支持 <strong>Alpine 3.21 / Ubuntu 24.04.5 / Debian 12 / Arch ARM</strong> 与 <code>aarch64 / x86_64 / armv7l</code>；</li>
+              <li>可选 CLI 或 XFCE4 / LXQt / Openbox + VNC/noVNC 桌面环境，自动配置 <code>nya-exec / busybox / apk</code>；</li>
+              <li>极简模式首轮仅暴露 <code>nya_linux_exec</code> 与 <code>nya_load_tools</code>，中途按需动态挂载浏览器、搜索、图表与文件工具。</li>
             </ul>
           </article>
 
           <article class="sub-card">
-            <span class="sub-badge">Agent 工具 · 模型产物</span>
-            <h2>内置本地工具、PNG 绘图、MCP 与 SKILL.md</h2>
-            <p>模型不止输出文字，还能直接调用工具并在对话内展示可预览、可保存的文档与 PNG 绘图产物，每一步活动参数均可展开审计。</p>
+            <span class="sub-badge">无痕浏览器 · MCP &amp; SKILL.md</span>
+            <h2>内置隐私 Agent 浏览器与开放工具生态</h2>
+            <p>浏览器直接内置于 <code>MainActivity</code> 视图层，不在 Android 最近任务栏留下独立记录，并支持与模型双向自动化协同。</p>
             <ul>
-              <li>完整支持 <strong>MCP Streamable HTTP</strong>（JSON/SSE），调用前强制弹出参数确认；</li>
-              <li>支持导入 <code>SKILL.md</code> 技能文件并按对话精细启用；</li>
-              <li>内置计算器、时间工具、独立只读分析子 Agent、文档/表格编辑与「浏览器与 SSH」快捷拉起。</li>
+              <li>默认桌面 Chrome UA（一键切换桌面/移动），4:3 悬浮小窗自由拖动缩放，隐藏后化作右下角不挡字紧凑胶囊 <code>[ ▢ 浏览器 × ]</code>；</li>
+              <li>完整提供 <code>nya_browser</code>（<code>open / read / click / type / scroll / eval / back / close</code>）DOM 桥接；</li>
+              <li>完整支持 <strong>MCP Streamable HTTP</strong>（JSON/SSE，调用前强制确认）与 <code>SKILL.md</code> 按对话启用。</li>
             </ul>
           </article>
 
           <article class="sub-card">
-            <span class="sub-badge">联网检索 · 推理控制</span>
-            <h2>DeepSeek + Tavily 双搜索引擎与思考强度滑块</h2>
-            <p>联网搜索同时支持 DeepSeek 与 Tavily 两套引擎，各自独立保存 API Key 与返回条数（1–10 条）。Tavily 支持深入搜索，并在读取公开网页前逐次请求你的确认。</p>
+            <span class="sub-badge">7 档思考 · 统一时间线</span>
+            <h2>粉白滑块动态指针、每步思考与上下文占用统计</h2>
+            <p>彻底移除笨重框选思考按钮与灯泡图标，以克制统一的每步时间线记录全流程推理与终端命令，移除默认工具步数上限。</p>
             <ul>
-              <li>官方思考链默认自动展示，可按需折叠或切回隐藏；</li>
-              <li>支持单段对话内用滑块在「自动 / 轻量 / 标准 / 深入」间微调思考强度；</li>
-              <li>每条回复底部实时呈现输入/输出 Token 数与 <code>token/s</code> 生成速度。</li>
+              <li>7 档思考强度（<code>自动 / 低 / 中 / 高 / 极高 / Max / Ultra</code>），粉白双色轨道联动输入栏动态指针，<strong>Ultra</strong> 挂载 <code>nya_subagent</code> 独立交叉核验；</li>
+              <li>支持<strong>简洁预览</strong>与<strong>完整时间线</strong>（含绿/红 <code>exit N</code> 终端卡片）原地平滑切换与「模型自动总结每小步」；</li>
+              <li>单行底部统计直观展示 <code>输入 · 输出 · 上下文 P% (已用/上限) · tok/s</code>，并智能防误触发联网搜索。</li>
             </ul>
           </article>
 
           <article class="sub-card">
-            <span class="sub-badge">无障碍能力 · 硬安全护栏</span>
-            <h2>看得懂屏幕、守得住底线的安卓手机助手</h2>
-            <p>开启系统无障碍服务后，仅在你主动下发任务时按需读取前台节点与截图（Android 11+），日常零后台事件采集。</p>
+            <span class="sub-badge">交互图表 · 计费热力图</span>
+            <h2>对话内原生交互图表、记忆摘要与用量余额看板</h2>
+            <p>让数据可视化与成本控制都留在纯原生界面里，离线也能丝滑交互与复盘。</p>
             <ul>
-              <li><strong>密码脱敏</strong>：密码与验证码输入框自动替换为 <code>[密码已隐藏]</code>，硬编码禁止代填；</li>
-              <li><strong>高危拦截</strong>：支付、转账、删除、发送、权限授予及坐标点击必弹二次确认浮层；</li>
-              <li><strong>自我隔离</strong>：代码层禁止操控 NyaLLM 自身的设置页与授权页。</li>
+              <li>支持 <code>nya_interactive_chart</code> 与 Markdown <code>```chart</code> 代码块，实时切换折线 / 柱状 / 面积 / 饼图 / 数据表，支持手指滑动探针、图例过滤与 CSV 复制；</li>
+              <li>「使用情况与计费」内置每日 / 每月 / 每年 Token 热力图、<strong>DeepSeek / Kimi / OpenRouter 实时余额查询</strong>与模型调用次数排行；</li>
+              <li>「记忆与历史」新增「记忆摘要」与一键 AI 提炼摘要，支持离线本地回退抽取。</li>
             </ul>
           </article>
 
           <article class="sub-card">
-            <span class="sub-badge">记忆与分支 · 多模态</span>
-            <h2>对话分支新窗、本机持久记忆与全量备份</h2>
-            <p>任意单条回复都可以一键「分支到新窗口」，方便用不同模型或不同提示词并行对比结果。</p>
+            <span class="sub-badge">项目 · 临时对话 · 手机护栏</span>
+            <h2>对话项目、ChatGPT 同款快捷栏与无障碍硬护栏</h2>
+            <p>兼顾高效日常聊天与严格隐私安全，支持 5 套双模提示词（NyaLLM / Codex / ChatGPT / Gemini / Claude）与 4 组快捷角色预设。</p>
             <ul>
-              <li>初次回复后自动总结对话标题，保持侧栏清爽；</li>
-              <li>支持编辑本机持久记忆并按相关性自动摘录历史上下文；</li>
-              <li>支持图片（JPEG/PNG/WebP）、PDF（≤8 页转图或原生文件）、DOCX 与 UTF-8 文本预览保存，以及 ZIP 全量本地备份。</li>
+              <li>侧栏「项目」支持自定义主题色与专属项目指令；临时对话不落盘并自动屏蔽本机记忆；</li>
+              <li>回复自带复制绿勾、系统 TTS 语音朗读、分享、语音听写输入、相机拍照、对话内搜索高亮与单行历史预览；</li>
+              <li>无障碍手机助手自动脱敏密码 <code>[密码已隐藏]</code>，支付/删除/权限必弹确认浮层且硬编码禁止操控自身设置。</li>
             </ul>
           </article>
 
           <article class="sub-card">
-            <span class="sub-badge">NyaStyle · 视觉工艺</span>
-            <h2>四套官方配色预设、超椭圆曲率与自定义背景</h2>
-            <p>延续 <code>|t|^0.63</code> 连续超椭圆控件曲率、Android 12+ 实时模糊与半透明输入区材质，并内置明暗双模式。</p>
+            <span class="sub-badge">NyaStyle 1.0 · 全屏柔焦</span>
+            <h2>Edge-to-Edge 轻高斯模糊、高对比度与四大配色</h2>
+            <p>Android 12+ 在手机状态栏（时间/电量）与底部纯圆胶囊下方启用 6.5–7.5dp 渐进轻高斯模糊与 GPU 逐字模糊聚焦流式输出。</p>
             <ul>
-              <li>四套官方主题：NyaLLM 白纸浅粉、ChatGPT 清雅翡翠、Gemini 雾蓝晴紫、Claude 暖羊皮纸；</li>
-              <li>支持自由填写 <code>#RRGGBB</code> 自定义主色与从相册选取设备背景图；</li>
-              <li>提供思源黑体、系统默认、衬线与等宽 4 套字体族，支持时区问候欢迎屏。</li>
+              <li>四套高对比度官方配色（NyaLLM 白纸浅粉、ChatGPT 翡翠、Gemini 晴蓝、Claude 暖羊皮纸）与 <code>#RRGGBB</code> / 设备背景图自定义；</li>
+              <li>完整原生 Markdown（多级标题、2 列自适应表格防裁切、宽代码块横向滚动不误触侧栏）；</li>
+              <li>支持多窗斜切任务栏、后台窗口管理、双窗分屏与 ZIP 全量本地备份。</li>
             </ul>
           </article>
         </div>
@@ -171,7 +171,7 @@
       <div class="footer-brand">
         <img src="/assets/brand/nyallm-launcher.png" alt="NyaLLM 图标" width="32" height="32" class="footer-icon" />
         <div>
-          <div class="footer-name">NyaLLM <span>0.9.1</span></div>
+          <div class="footer-name">NyaLLM <span>1.0.2</span></div>
           <p class="footer-note">白纸浅粉 · 纯原生安卓多窗 AI 工作台 · nyallm.com</p>
         </div>
       </div>

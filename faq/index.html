@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NyaLLM 使用指南与常见问题 FAQ — NyaLLM 官网</title>
-  <meta name="description" content="NyaLLM 快速上手教程与常见问题解答：如何覆盖升级安装 APK、API Key 隐私与本地存储、如何连接电脑局域网 Ollama、如何配置 MCP 与 SKILL.md、手机助手安全护栏以及备份恢复方法。" />
-  <meta name="keywords" content="NyaLLM教程,NyaLLM使用指南,NyaLLM常见问题,NyaLLM FAQ,NyaLLM怎么配置API,Ollama局域网连接,Android MCP配置,NyaLLM安全吗" />
+  <title>NyaLLM 1.0.2 使用指南与常见问题 FAQ — NyaLLM 官网</title>
+  <meta name="description" content="NyaLLM 1.0.2 快速上手教程与常见问题解答：覆盖升级 APK、本地 Linux RootFS 容器与 exec 权限、工作极简模式省 Token、隐私 Agent 浏览器、API Key 隐私、Ollama 局域网连接、MCP/SKILL.md 与手机助手安全护栏。" />
+  <meta name="keywords" content="NyaLLM教程,NyaLLM使用指南,NyaLLM FAQ,NyaLLM Linux容器,NyaLLM极简模式,NyaLLM隐私浏览器,Ollama局域网连接,Android MCP配置" />
   <meta name="author" content="小黑子打篮球hz" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <link rel="canonical" href="https://nyallm.com/faq/" />
@@ -13,8 +13,8 @@
   <meta property="og:locale" content="zh_CN" />
   <meta property="og:site_name" content="NyaLLM" />
   <meta property="og:url" content="https://nyallm.com/faq/" />
-  <meta property="og:title" content="NyaLLM 使用指南与常见问题 FAQ" />
-  <meta property="og:description" content="一站解答安装升级、隐私安全、Ollama 本地连接、MCP 工具、SKILL.md 与手机助手相关问题。" />
+  <meta property="og:title" content="NyaLLM 1.0.2 使用指南与常见问题 FAQ" />
+  <meta property="og:description" content="一站解答覆盖升级、Linux 容器 exec 权限、工作极简模式、隐私浏览器、Ollama 本地连接与手机助手护栏。" />
   <meta property="og:image" content="https://nyallm.com/icon-512.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="theme-color" content="#FFFFFF" />
@@ -45,26 +45,34 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "NyaLLM 是免费软件吗？支持哪些安卓系统版本？",
+            "name": "NyaLLM 1.0.2 支持哪些安卓版本？为什么采用 targetSdkVersion 28？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "NyaLLM 客户端本身完全免费下载使用，采用自带密钥（BYOK）或连接本地 Ollama 模型的方式运行。支持 Android 8.0（API 26）及以上系统，Android 12 及以上设备可享受原生模糊渲染效果。"
+              "text": "支持 Android 8.0（API 26）及以上，已完整实测兼容 Android 15，且在 Android 12+ 自动启用全屏轻高斯模糊与逐字模糊聚焦流式。采用 targetSdkVersion 28 是为了在无需 Root 的前提下合法开放应用私有目录的 Linux 容器 exec 执行权限，让 Alpine/Ubuntu/Debian/Arch RootFS 中的命令行工具正常执行。"
             }
           },
           {
             "@type": "Question",
-            "name": "老版本升级到 NyaLLM 0.9.1 需要卸载重装吗？",
+            "name": "老版本升级到 NyaLLM 1.0.2 需要卸载重装吗？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "不需要。NyaLLM 0.9.1 延续与 0.4.x 至 0.9.0 完全相同的官方签名证书，直接下载覆盖安装即可保留全部对话记录、本机记忆、自定义背景图、附件与模型服务商密钥。"
+              "text": "不需要。NyaLLM 1.0.2 延续与 0.4.x 至 1.0.1 完全相同的官方签名证书，直接下载覆盖安装即可保留全部对话、项目、本机记忆、自定义背景图、附件与模型服务商密钥。"
             }
           },
           {
             "@type": "Question",
-            "name": "我的 API Key 和聊天记录安全吗？会上传到第三方服务器吗？",
+            "name": "什么是「工作极简模式」？它为什么能大幅省 Token？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "所有 API Key、MCP Token、聊天记录与本机记忆都仅保存在你的手机本地，网络请求直接发往你配置的模型服务商或本地 Ollama，不经过任何作者自建中转服务器。更换自定义接口地址时还会自动隔离旧凭据与请求头。"
+              "text": "工作模式默认开启极简模式，首轮只向模型发送命令行工具（nya_linux_exec）、按需加载器（nya_load_tools）和一份极简工具目录表；当任务需要用到隐私浏览器、联网搜索、交互图表或文件工具时，模型会在中途动态按需挂载对应工具 Schema，显著降低日常与多轮调用的输入 Token 消耗。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "我的 API Key 和聊天记录安全吗？隐私浏览器会留痕吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "所有 API Key、MCP Token、聊天记录、项目与本机记忆都仅保存在你的手机本地，网络请求直连你配置的服务商或局域网 Ollama。内置隐私 Agent 浏览器直接嵌于主视图层，不会在 Android 最近任务栏创建独立浏览器任务；临时对话模式更不落盘且自动屏蔽本机记忆。"
             }
           },
           {
@@ -72,7 +80,7 @@
             "name": "怎么用 NyaLLM 连接电脑上的 Ollama 本地大模型？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "先在电脑端设置 OLLAMA_HOST=0.0.0.0:11434 并启动 Ollama，放行 11434 端口；随后在手机 NyaLLM 中打开「Ollama · 本地」服务商设置，填入 http://电脑局域网IP:11434（无需 API Key），点击「拉取模型」即可通过 /api/tags 自动发现全部已装模型。"
+              "text": "在电脑端设置 OLLAMA_HOST=0.0.0.0:11434 并启动 Ollama、放行 11434 端口；随后在手机 NyaLLM 中打开「Ollama · 本地」服务商页面填入 http://电脑局域网IP:11434（无需 API Key），点击「拉取模型」即通过 /api/tags 自动发现全部已装模型。"
             }
           },
           {
@@ -81,14 +89,6 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "不会。手机助手仅在你主动下发任务时按需读取前台屏幕，平时零事件采集；代码层硬编码了密码与验证码框自动脱敏为 [密码已隐藏] 且禁止代填，支付、转账、删除、发送、权限与坐标点击必须经过二次确认浮层，同时禁止操控 NyaLLM 自身的设置与授权页。"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "如何在 NyaLLM 中使用 MCP 工具和 SKILL.md 技能？",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "进入设置即可添加符合 Streamable HTTP（JSON/SSE）规范的 MCP 服务器地址与凭据，也可直接导入 SKILL.md 技能文件并在对话底栏的「工具」菜单中按对话精细开关；每次 MCP 工具调用前都会弹出清晰的参数确认卡片，由你决定允许或拒绝。"
             }
           }
         ]
@@ -103,7 +103,7 @@
       <a href="/" class="brand-lockup">
         <span class="brand-squircle"><img src="/assets/brand/nyallm-launcher.png" alt="NyaLLM 猫娘图标" width="34" height="34" /></span>
         <span class="brand-word">NyaLLM</span>
-        <span class="version-chip">0.9.1</span>
+        <span class="version-chip">1.0.2</span>
       </a>
       <nav class="nav-links" aria-label="主导航">
         <a href="/">首页</a>
@@ -122,7 +122,7 @@
     </div>
     <div class="mobile-nav" id="mobile-nav" hidden>
       <a href="/">首页工作台</a>
-      <a href="/download/">下载 NyaLLM 0.9.1 APK</a>
+      <a href="/download/">下载 NyaLLM 1.0.2 APK</a>
       <a href="/features/">核心能力详解</a>
       <a href="/providers/">8 大模型服务商</a>
       <a href="/changelog/">版本更新日志</a>
@@ -138,10 +138,10 @@
           <span class="bc-sep">/</span>
           <span aria-current="page">使用指南与常见问题</span>
         </nav>
-        <span class="sub-badge">QUICK START &amp; FAQ · 常见问题解答</span>
+        <span class="sub-badge">QUICK START &amp; FAQ · 1.0.2 常见问题解答</span>
         <h1 class="sub-hero-title">NyaLLM 快速上手指南与常见问题（FAQ）</h1>
         <p class="sub-hero-lead">
-          汇集安装升级、API Key 隐私保护、本地 Ollama 局域网连接、MCP 与 <code>SKILL.md</code> 技能、手机助手安全护栏以及备份恢复的高频问题解答。
+          汇集覆盖升级、Linux 容器 <code>exec</code> 权限、工作极简模式省 Token、隐私浏览器、API Key 隐私保护、本地 Ollama 局域网连接以及无障碍安全护栏的高频解答。
         </p>
         <div class="sub-hero-actions">
           <a href="/download/" class="btn btn-primary btn-lg">前往下载中心</a>
@@ -154,38 +154,38 @@
       <div class="container">
         <div class="faq-list">
           <article class="faq-item">
-            <h2>1. NyaLLM 是免费软件吗？支持哪些安卓系统版本？</h2>
-            <p>NyaLLM 客户端本身完全免费下载使用，采用 BYOK（自带模型 API Key）或连接本地 Ollama 模型的方式运行。安装包仅 <code>7.61 MB</code>，支持 <strong>Android 8.0（API 26）及以上</strong>系统；在 Android 12 及以上设备上会自动启用系统级实时模糊渲染。</p>
+            <h2>1. NyaLLM 1.0.2 支持哪些安卓版本？为什么采用 targetSdkVersion 28？</h2>
+            <p>NyaLLM 客户端完全免费下载使用，体积仅 <code>7.87 MB</code>，支持 <strong>Android 8.0（API 26）及以上</strong>并在 Android 15 实机通过完整验收；Android 12+ 自动启用全屏轻高斯模糊。采用 <code>targetSdkVersion 28</code> 是为了在免 Root 情况下合法开放应用私有目录的 Linux <code>exec</code> 可执行权限，确保 Alpine / Ubuntu / Debian / Arch 官方 RootFS 内的命令行与工具链直接正常运行。</p>
           </article>
 
           <article class="faq-item">
-            <h2>2. 老版本升级到 NyaLLM 0.9.1 需要卸载重装吗？</h2>
-            <p>不需要。<code>0.9.1</code> 延续与 <code>0.4.x – 0.9.0</code> 完全一致的官方签名证书，直接从 <a href="/download/">下载中心</a> 获取 APK 覆盖安装即可完整保留对话、本机记忆、自定义背景图、附件与所有服务商凭据。旧版的「隐藏思考」会自动迁移为「自动显示」，也可随时切回。</p>
+            <h2>2. 老版本升级到 NyaLLM 1.0.2 需要卸载重装吗？</h2>
+            <p>不需要。<code>1.0.2</code> 延续与 <code>0.4.x – 1.0.1</code> 完全一致的官方签名证书，直接从 <a href="/download/">下载中心</a> 获取 APK 覆盖安装即可完整保留对话、项目、本机记忆、自定义背景图、附件与所有服务商凭据。</p>
           </article>
 
           <article class="faq-item">
-            <h2>3. 我的 API Key 和聊天记录安全吗？会上传到第三方服务器吗？</h2>
-            <p>所有 API Key、MCP Token、聊天记录与本机记忆都<strong>仅保存在你的手机本机</strong>，请求直接发往你在服务商页面配置的目标接口，不经过任何作者自建中转服务器。更换自定义接口地址时还会自动隔离旧凭据与自定义请求头，避免误发密钥。</p>
+            <h2>3. 什么是「工作极简模式」？如何避免日常打招呼误触发联网搜索？</h2>
+            <p>工作模式默认启用<strong>极简模式</strong>（可在欢迎页、<code>+</code> 菜单与设置中一键开关）：首轮仅发送 <code>nya_linux_exec</code> 与 <code>nya_load_tools</code> 及精简目录表，模型只在真正需要时才动态挂载隐私浏览器、搜索、图表或文件工具，大幅节省输入 Token。同时 1.0.2 将工具模式下的联网搜索改为按需调用 <code>nya_web_search</code>，日常问候（如「你好」「现在呢」）或本地终端命令不再无故触发搜索。</p>
           </article>
 
           <article class="faq-item">
-            <h2>4. 怎么用 NyaLLM 连接电脑上的 Ollama 本地大模型？</h2>
+            <h2>4. 我的 API Key 和聊天记录安全吗？隐私浏览器会留痕吗？</h2>
+            <p>所有 API Key、MCP Token、聊天记录、项目与本机记忆都<strong>仅保存在你的手机本机</strong>，请求直连你配置的目标接口，不经过任何作者自建中转服务器。内置隐私 Agent 浏览器嵌在主视图层，系统最近任务列表完全不可见，隐藏后自动收起为右下角不挡字紧凑胶囊 <code>[ ▢ 浏览器 × ]</code>；临时对话模式更不落盘并自动屏蔽本机记忆。</p>
+          </article>
+
+          <article class="faq-item">
+            <h2>5. 怎么用 NyaLLM 连接电脑上的 Ollama 本地大模型？</h2>
             <p>在运行 Ollama 的电脑上设置环境变量 <code>OLLAMA_HOST=0.0.0.0:11434</code> 并重启 Ollama（确保防火墙放行 <code>11434</code> 端口）。手机连入同一 Wi-Fi 后，打开 NyaLLM 的「Ollama · 本地」服务商页面填入 <code>http://电脑局域网IP:11434</code>（留空 API Key），点「拉取模型」即会通过 <code>/api/tags</code> 自动发现已安装的本地模型。</p>
           </article>
 
           <article class="faq-item">
-            <h2>5. 开启无障碍「手机助手」会不会泄露密码或误触发支付？</h2>
+            <h2>6. 开启无障碍「手机助手」会不会泄露密码或误触发支付？</h2>
             <p>不会。手机助手平时零事件记录，仅在你主动发起任务时读取当前屏幕；客户端内置三层硬安全护栏：密码与验证码输入框自动脱敏为 <code>[密码已隐藏]</code> 并禁止代填；支付、转账、删除、发送、权限授予及坐标点击全部强制弹出二次确认浮层；硬编码禁止操控 NyaLLM 自身的设置与授权页。</p>
           </article>
 
           <article class="faq-item">
-            <h2>6. 如何在 NyaLLM 中配置 MCP 工具、SKILL.md 和联网搜索？</h2>
-            <p>在设置中填入支持 Streamable HTTP（JSON/SSE）协议的 MCP 服务器地址即可接入外部工具，每次调用前都会弹出参数确认框；支持导入 <code>SKILL.md</code> 技能并在对话底栏「工具」菜单中按会话启用。联网搜索支持同时保存 DeepSeek 与 Tavily 两套 Key，可在对话底栏一键切换。</p>
-          </article>
-
-          <article class="faq-item">
             <h2>7. 换手机时如何迁移全部聊天记录与配置？如何支持作者？</h2>
-            <p>在应用内使用 <strong>ZIP 全量本地备份</strong>功能即可导出消息、窗口布局、自定义背景图、附件与模型产物并在新设备一键还原。如果你喜欢 NyaLLM，欢迎前往官方爱发电主页 <a href="https://ifdian.net/a/NyaLLM" target="_blank" rel="noopener noreferrer">ifdian.net/a/NyaLLM</a> 支持独立开发者小黑子打篮球hz，或在 <a href="https://github.com/xiaoheiHZ/NyaLLM" target="_blank" rel="noopener noreferrer">GitHub 仓库</a> 反馈建议。</p>
+            <p>在应用内使用 <strong>ZIP 全量本地备份</strong>功能即可导出消息、窗口布局、项目、自定义背景图、附件与模型产物并在新设备一键还原。如果你喜欢 NyaLLM，欢迎前往官方爱发电主页 <a href="https://ifdian.net/a/NyaLLM" target="_blank" rel="noopener noreferrer">ifdian.net/a/NyaLLM</a> 支持独立开发者小黑子打篮球hz，或在 <a href="https://github.com/xiaoheiHZ/NyaLLM" target="_blank" rel="noopener noreferrer">GitHub 仓库</a> 反馈建议。</p>
           </article>
         </div>
       </div>
@@ -197,7 +197,7 @@
       <div class="footer-brand">
         <img src="/assets/brand/nyallm-launcher.png" alt="NyaLLM 图标" width="32" height="32" class="footer-icon" />
         <div>
-          <div class="footer-name">NyaLLM <span>0.9.1</span></div>
+          <div class="footer-name">NyaLLM <span>1.0.2</span></div>
           <p class="footer-note">白纸浅粉 · 纯原生安卓多窗 AI 工作台 · nyallm.com</p>
         </div>
       </div>

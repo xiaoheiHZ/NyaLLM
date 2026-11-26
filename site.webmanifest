@@ -1,7 +1,7 @@
 {
   "name": "NyaLLM — 纯原生安卓多窗 AI 工作台",
   "short_name": "NyaLLM",
-  "description": "白纸浅粉，7.61 MB 零 WebView 纯原生安卓多窗 AI 工作台，支持斜切任务栏、双窗分屏、MCP、SKILL.md、DeepSeek/Tavily 双搜索与 Ollama 本地模型。",
+  "description": "白纸浅粉，7.87 MB 零 WebView 纯原生安卓多窗 AI 工作台，内置本地 Linux RootFS 容器、隐私 Agent 浏览器、7 档思考强度、对话内交互图表与 8 大模型服务商。",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
