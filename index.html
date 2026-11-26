@@ -3,214 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NyaLLM 官网 — 白纸浅粉，纯原生安卓多窗 AI 工作台（v0.9.1 APK 下载）</title>
-  <meta name="description" content="NyaLLM 0.9.1 官方网站（nyallm.com）。7.61 MB 纯原生零 WebView 安卓多窗 AI 工作台，支持斜切任务栏、后台窗口管理、双窗分屏、MCP 工具、SKILL.md、DeepSeek/Tavily 双搜索、Ollama 本地模型、绘图产物与四套官方配色，Android 8.0+ 免费下载。" />
-  <meta name="keywords" content="NyaLLM,NyaLLM官网,NyaLLM下载,NyaLLM APK,NyaLLM 0.9.1,安卓AI客户端,纯原生安卓AI工作台,零WebView,安卓多窗AI,Android MCP客户端,SKILL.md,DeepSeek安卓客户端,Gemini安卓客户端,Ollama安卓客户端,Tavily搜索,AI手机助手,小黑子打篮球hz" />
-  <meta name="author" content="小黑子打篮球hz" />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <link rel="canonical" href="https://nyallm.com/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="zh_CN" />
-  <meta property="og:site_name" content="NyaLLM" />
-  <meta property="og:url" content="https://nyallm.com/" />
-  <meta property="og:title" content="NyaLLM 官网 — 纯原生安卓多窗 AI 工作台（v0.9.1）" />
-  <meta property="og:description" content="白纸浅粉，多窗并行流式、后台窗口管理、MCP 工具、SKILL.md、DeepSeek/Tavily 双搜索、模型产物与带安全护栏的手机助手。Android 8.0+，仅 7.61 MB。" />
-  <meta property="og:image" content="https://nyallm.com/icon-512.png" />
-  <meta property="og:image:width" content="512" />
-  <meta property="og:image:height" content="512" />
-  <meta property="og:image:alt" content="NyaLLM 标志图标" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="NyaLLM 官网 — 纯原生安卓多窗 AI 工作台（v0.9.1）" />
-  <meta name="twitter:description" content="7.61 MB 零 WebView 纯原生安卓多窗 AI 工作台，支持 MCP、SKILL.md、双搜索引擎与 Ollama 本地模型。" />
-  <meta name="twitter:image" content="https://nyallm.com/icon-512.png" />
+  <title>NyaLLM 1.0.2 — 白纸浅粉，纯原生安卓多窗 AI 工作台</title>
+  <meta name="description" content="NyaLLM 1.0.2 官方网站。7.87 MB 纯原生零 WebView 安卓多窗 AI Agent 工作台，内置本地 Linux 容器（完整 RootFS 与 exec 权限）、工作极简模式按需加载工具、隐私 Agent 浏览器、7 档思考强度、对话内交互图表、对话项目与 Token 用量热力图。" />
+  <meta property="og:title" content="NyaLLM 1.0.2 — 纯原生安卓多窗 AI 工作台" />
+  <meta property="og:description" content="白纸浅粉，本地 Linux 容器、隐私 Agent 浏览器、7 档思考强度、统一每步时间线与对话内交互图表。Android 8.0+，仅 7.87 MB。" />
+  <meta property="og:image" content="assets/brand/nyallm-launcher.png" />
   <meta name="theme-color" content="#FFFFFF" />
-  <link rel="icon" href="/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" type="image/png" href="assets/brand/nyallm-launcher.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="subpage.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://nyallm.com/#website",
-        "url": "https://nyallm.com/",
-        "name": "NyaLLM",
-        "alternateName": ["NyaLLM 官网", "NyaLLM 安卓多窗 AI 工作台"],
-        "description": "白纸浅粉，7.61 MB 零 WebView 纯原生安卓多窗 AI 工作台官方网站与 APK 发布页。",
-        "inLanguage": "zh-CN"
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://nyallm.com/#organization",
-        "name": "NyaLLM",
-        "url": "https://nyallm.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://nyallm.com/icon-512.png",
-          "width": 512,
-          "height": 512
-        },
-        "sameAs": [
-          "https://github.com/xiaoheiHZ/NyaLLM",
-          "https://ifdian.net/a/NyaLLM"
-        ]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "https://nyallm.com/#app",
-        "name": "NyaLLM",
-        "applicationCategory": "ProductivityApplication",
-        "operatingSystem": "Android 8.0+",
-        "softwareVersion": "0.9.1",
-        "fileSize": "7.61 MB",
-        "url": "https://nyallm.com/",
-        "downloadUrl": "https://nyallm.com/download/",
-        "installUrl": "https://nyallm.com/downloads/NyaLLM-0.9.1.apk",
-        "image": "https://nyallm.com/icon-512.png",
-        "description": "纯 Java 编写、零 WebView 的原生安卓多窗 AI 工作台，支持斜切任务栏、双窗分屏、MCP 工具、SKILL.md、DeepSeek/Tavily 双搜索、8 大模型服务商与 Ollama 本地模型。",
-        "author": {
-          "@type": "Person",
-          "name": "小黑子打篮球hz",
-          "url": "https://github.com/xiaoheiHZ"
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "CNY"
-        }
-      },
-      {
-        "@type": "ItemList",
-        "@id": "https://nyallm.com/#sitenav",
-        "name": "NyaLLM 站内栏目导航",
-        "itemListElement": [
-          { "@type": "SiteNavigationElement", "position": 1, "name": "下载中心（APK 与校验）", "url": "https://nyallm.com/download/" },
-          { "@type": "SiteNavigationElement", "position": 2, "name": "核心功能与多窗架构", "url": "https://nyallm.com/features/" },
-          { "@type": "SiteNavigationElement", "position": 3, "name": "8 大模型服务商与 Ollama", "url": "https://nyallm.com/providers/" },
-          { "@type": "SiteNavigationElement", "position": 4, "name": "版本更新日志", "url": "https://nyallm.com/changelog/" },
-          { "@type": "SiteNavigationElement", "position": 5, "name": "使用指南与常见问题", "url": "https://nyallm.com/faq/" }
-        ]
-      }
-    ]
-  }
-  </script>
 </head>
 <body>
-  <!-- Hidden SVG Sprite faithful to NyaStyle.Glyph (1.65px round stroke) -->
+  <!-- Hidden SVG Sprite faithful to NyaStyle.Glyph (1.8px crisp rounded stroke) -->
   <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true">
     <defs>
-      <symbol id="g-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M5 6h14M5 12h11M5 18h14" />
+      <symbol id="g-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 9h14M5 15h9" />
       </symbol>
       <symbol id="g-dots" viewBox="0 0 24 24" fill="currentColor">
-        <circle cx="6" cy="12" r="1.5" />
-        <circle cx="12" cy="12" r="1.5" />
-        <circle cx="18" cy="12" r="1.5" />
+        <circle cx="6" cy="12" r="1.55" />
+        <circle cx="12" cy="12" r="1.55" />
+        <circle cx="18" cy="12" r="1.55" />
       </symbol>
-      <symbol id="g-window" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="4" y="6" width="14" height="14" rx="3" />
-        <path d="M8 3h11l1 2v10" />
+      <symbol id="g-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round">
+        <path d="M12 5v14M5 12h14" />
       </symbol>
-      <symbol id="g-split" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+      <symbol id="g-edit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-6" />
+        <path d="M18.5 3.5a2.12 2.12 0 0 1 3 3L12 16l-4 1 1-4 9.5-9.5Z" />
+      </symbol>
+      <symbol id="g-ghost" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.4 2.4">
+        <rect x="4" y="5" width="16" height="12" rx="5" />
+        <path d="M8 17l-1.5 3 3.5-2" />
+      </symbol>
+      <symbol id="g-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="16" rx="3" />
+        <path d="M7.5 9.5l3 2.5-3 2.5M12.5 14.5h4" />
+      </symbol>
+      <symbol id="g-cube" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3Z" />
+        <path d="M12 12l8-4.5M12 12v9M12 12L4 7.5" />
+      </symbol>
+      <symbol id="g-browser" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="16" rx="3" />
+        <path d="M3 9h18M7 6.5h.01M10 6.5h.01" />
+      </symbol>
+      <symbol id="g-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19h16M7 15v-4M12 15V7M17 15v-6" />
+      </symbol>
+      <symbol id="g-gauge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4.5 16.5a8.5 8.5 0 1 1 15 0" />
+        <circle cx="12" cy="15.5" r="1.4" fill="currentColor" />
+      </symbol>
+      <symbol id="g-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 7a2 2 0 0 1 2-2h4.5l2 2H19a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z" />
+      </symbol>
+      <symbol id="g-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="9" y="3" width="6" height="11" rx="3" />
+        <path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21" />
+      </symbol>
+      <symbol id="g-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M6.5 10.5L12 5l5.5 5.5" />
+      </symbol>
+      <symbol id="g-volume" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 10v4h4l5 4V6l-5 4H5ZM17.5 9.5a3.5 3.5 0 0 1 0 5" />
+      </symbol>
+      <symbol id="g-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 15V4M8 8l4-4 4 4M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4" />
+      </symbol>
+      <symbol id="g-split" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
         <rect x="4" y="4" width="16" height="16" rx="3" />
         <path d="M4 12h16" />
       </symbol>
-      <symbol id="g-stage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="3" y="4" width="18" height="16" rx="3" />
-        <path d="M9 4v16" />
-      </symbol>
-      <symbol id="g-focus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M4 10V4h6M14 4h6v6M20 14v6h-6M10 20H4v-6" />
-      </symbol>
-      <symbol id="g-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+      <symbol id="g-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
         <rect x="7" y="8" width="10" height="8" rx="2" />
         <path d="M9 8V4M15 8V4M12 16v5" />
       </symbol>
-      <symbol id="g-skill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="5" y="4" width="14" height="16" rx="2" />
-        <path d="M9 9h6M9 13h6" />
+      <symbol id="g-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="10.5" cy="10.5" r="5.5" />
+        <path d="M15 15l5 5" />
       </symbol>
-      <symbol id="g-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="7" y="3" width="10" height="18" rx="2.5" />
-        <path d="M11 18h2" />
-      </symbol>
-      <symbol id="g-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="10" cy="10" r="5" />
-        <path d="M14 14l6 6" />
-      </symbol>
-      <symbol id="g-tools" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="3" y="7" width="18" height="13" rx="3" />
-        <path d="M8 7V4h8v3M3 12h7v2h4v-2h7" />
-      </symbol>
-      <symbol id="g-paperclip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M13 17l7-7a3 3 0 0 0-4.24-4.24l-8 8a4.5 4.5 0 0 0 6.36 6.36l6.36-6.36" />
-      </symbol>
-      <symbol id="g-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="4" y="4" width="16" height="16" rx="3" />
-        <circle cx="9" cy="9" r="1.5" />
-        <path d="M6 17l5-4 3 2 4-4" />
-      </symbol>
-      <symbol id="g-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+      <symbol id="g-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
         <rect x="8" y="8" width="12" height="12" rx="2" />
         <path d="M4 15V4h11" />
       </symbol>
-      <symbol id="g-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <symbol id="g-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
         <path d="M5 12l5 5 9-10" />
       </symbol>
-      <symbol id="g-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+      <symbol id="g-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M6 6l12 12M6 18L18 6" />
       </symbol>
-      <symbol id="g-min" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M6 12h12" />
-      </symbol>
-      <symbol id="g-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+      <symbol id="g-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
         <path d="M10 6l6 6-6 6" />
       </symbol>
-      <symbol id="g-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+      <symbol id="g-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 9l6 6 6-6" />
+      </symbol>
+      <symbol id="g-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
         <path d="M4 7h16M4 17h16" />
         <circle cx="9" cy="7" r="2.3" fill="var(--surface)" />
         <circle cx="15" cy="17" r="2.3" fill="var(--surface)" />
       </symbol>
-      <symbol id="g-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <symbol id="g-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M13 2L4.5 13.5H12L11 22L19.5 10.5H12L13 2Z" />
       </symbol>
-      <symbol id="g-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <symbol id="g-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 4v11M7 11l5 5 5-5M5 19h14" />
       </symbol>
-      <symbol id="g-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+      <symbol id="g-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="4" />
         <path d="M12 3v2M12 19v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M3 12h2M19 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
       </symbol>
-      <symbol id="g-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+      <symbol id="g-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
         <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.7 6.7 0 0 0 10.5 10.5Z" />
       </symbol>
-      <symbol id="g-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+      <symbol id="g-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3Z" />
         <path d="M9.5 12.2l1.8 1.8 3.6-4" />
       </symbol>
-      <symbol id="g-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+      <symbol id="g-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
         <path d="M14 5h5v5M10 14L19 5M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5" />
       </symbol>
-      <symbol id="g-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="4" y="5" width="16" height="12" rx="4" />
-        <path d="M7 17v4l5-4" />
-      </symbol>
-      <symbol id="g-branch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="7" cy="6" r="2.2" />
-        <circle cx="7" cy="18" r="2.2" />
-        <circle cx="17" cy="9" r="2.2" />
-        <path d="M7 8.2v7.6M7 13c0-3 4-4 7.8-4" />
-      </symbol>
-      <symbol id="g-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+      <symbol id="g-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="9.5" cy="9.5" r="3" />
         <circle cx="14.5" cy="9.5" r="3" />
         <circle cx="12" cy="14" r="3" />
@@ -232,15 +148,14 @@
           <img src="assets/brand/nyallm-launcher.png" alt="NyaLLM 猫娘图标" width="34" height="34" />
         </span>
         <span class="brand-word">NyaLLM</span>
-        <span class="version-chip">0.9.1</span>
+        <span class="version-chip">1.0.2</span>
       </a>
 
       <nav class="nav-links" aria-label="主导航">
         <a href="#workbench">工作台</a>
-        <a href="/features/">核心能力</a>
-        <a href="/providers/">模型服务商</a>
-        <a href="/changelog/">更新日志</a>
-        <a href="/faq/">使用指南</a>
+        <a href="#features">核心能力</a>
+        <a href="#providers">模型服务商</a>
+        <a href="#changelog">演进历程</a>
         <a href="#support">爱发电</a>
       </nav>
 
@@ -256,7 +171,7 @@
           <svg class="ic"><use href="#g-bolt" /></svg>
           <span>爱发电</span>
         </a>
-        <a href="/download/" class="btn btn-ink nav-dl-btn">获取 APK</a>
+        <a href="#download" class="btn btn-ink nav-dl-btn">获取 APK</a>
         <button type="button" class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="打开菜单" aria-expanded="false">
           <svg class="ic"><use href="#g-menu" /></svg>
         </button>
@@ -265,20 +180,19 @@
 
     <!-- Mobile Drawer -->
     <div class="mobile-nav" id="mobile-nav" hidden>
-      <a href="#workbench">多窗工作台</a>
-      <a href="/features/">核心能力</a>
-      <a href="/providers/">模型服务商</a>
-      <a href="/changelog/">更新日志</a>
-      <a href="/faq/">使用指南与 FAQ</a>
+      <a href="#workbench">1.0.2 工作台</a>
+      <a href="#features">核心能力</a>
+      <a href="#providers">模型服务商</a>
+      <a href="#changelog">演进历程</a>
       <a href="#support">爱发电支持作者</a>
       <a href="https://github.com/xiaoheiHZ/NyaLLM" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
-      <a href="/download/" class="mobile-nav-cta">下载 NyaLLM 0.9.1 APK</a>
+      <a href="#download" class="mobile-nav-cta">下载 NyaLLM 1.0.2 APK</a>
     </div>
   </header>
 
   <main>
     <!-- ================================================================
-         SECTION 1: HERO + INTERACTIVE LIVE NYALLM 0.9.0 WORKBENCH
+         SECTION 1: HERO + INTERACTIVE LIVE NYALLM 1.0.2 WORKBENCH
          ================================================================ -->
     <section class="hero-section" id="workbench">
       <div class="container hero-grid">
@@ -288,7 +202,7 @@
             <button type="button" class="mascot-pill" id="mascot-boop" title="点一下打个招呼">
               <img src="assets/brand/nyallm-sticker.png" alt="NyaLLM 吉祥物" class="mascot-pill-img" />
               <span class="pulse-dot"></span>
-              <span>NyaLLM 0.9.1 · Android 8.0+ · 纯原生零 WebView</span>
+              <span>NyaLLM 1.0.2 · Android 8.0+ · 纯原生零 WebView</span>
             </button>
             <span class="boop-bubble" id="boop-bubble" aria-live="polite"></span>
           </div>
@@ -299,14 +213,14 @@
           </h1>
 
           <p class="hero-lead">
-            不套壳、不塞 WebView。0.9.1 延续 0.9 系列全新带来的<strong>后台窗口管理</strong>、<strong>时区问候</strong>、<strong>四套主题配色与自定义背景</strong>、<strong>Tavily + DeepSeek 双搜索</strong>、<strong>对话分支与绘图产物</strong>，并精修侧边卡片透视阴影，完整收进一枚仅 <strong>7.61 MB</strong> 的原生 Android 应用里。
+            1.0 时代全面进化。把<strong>本地 Linux 容器（完整 RootFS + <code>exec</code>）</strong>、<strong>工作极简模式按需加载工具</strong>、<strong>隐私 Agent 浏览器</strong>、<strong>7 档思考滑块</strong>与<strong>对话内交互图表</strong>，连同全屏轻高斯模糊，一起收进仅 <strong>7.87 MB</strong> 的纯原生 Android 应用。
           </p>
 
           <div class="hero-cta-row">
-            <a href="downloads/NyaLLM-0.9.1.apk" download="NyaLLM-0.9.1.apk" class="btn btn-primary btn-lg">
+            <a href="https://github.com/xiaoheiHZ/NyaLLM/releases/download/v1.0.2/NyaLLM-1.0.2.apk" class="btn btn-primary btn-lg">
               <svg class="ic"><use href="#g-download" /></svg>
-              <span>下载 NyaLLM 0.9.1</span>
-              <span class="btn-meta">7.61 MB</span>
+              <span>下载 NyaLLM 1.0.2</span>
+              <span class="btn-meta">7.87 MB</span>
             </a>
             <a href="https://ifdian.net/a/NyaLLM" target="_blank" rel="noopener noreferrer" class="btn btn-ifdian btn-lg">
               <svg class="ic"><use href="#g-bolt" /></svg>
@@ -317,292 +231,260 @@
 
           <div class="hero-metrics" role="list" aria-label="关键规格参数">
             <div class="metric-item" role="listitem">
-              <span class="metric-val">7.61 MB</span>
-              <span class="metric-label">纯 Java 原生 APK · 内含思源黑体</span>
+              <span class="metric-val">7.87 MB</span>
+              <span class="metric-label">纯原生 APK · 内含思源黑体与矢量品牌标</span>
             </div>
             <div class="metric-item" role="listitem">
-              <span class="metric-val">0 WebView</span>
-              <span class="metric-label">Android 12+ 模糊渲染 · 超椭圆控件</span>
+              <span class="metric-val">Linux + 浏览器</span>
+              <span class="metric-label">4 发行版 RootFS exec · 隐私无痕 DOM 桥接</span>
             </div>
             <div class="metric-item" role="listitem">
-              <span class="metric-val">8 服务商 + 双搜索</span>
-              <span class="metric-label">DeepSeek / Tavily · Ollama 免 Key</span>
+              <span class="metric-val">7 档思考强度</span>
+              <span class="metric-label">自动 → Ultra 子 Agent · 粉白滑块动态指针</span>
             </div>
             <div class="metric-item" role="listitem">
-              <span class="metric-val">4 套配色预设</span>
-              <span class="metric-label">支持 #RRGGBB 与设备背景图</span>
+              <span class="metric-val">全屏高斯模糊</span>
+              <span class="metric-label">Android 12+ 渐进柔焦 · 逐字模糊聚焦流式</span>
             </div>
           </div>
         </div>
 
-        <!-- Right Interactive Stage Workbench Demo (No Static Screenshots) -->
+        <!-- Right Interactive 1.0.2 Edge-to-Edge Workbench Demo -->
         <div class="hero-stage-wrap reveal" style="--reveal-delay: 80ms;">
           <!-- Interactive Stage Controls Toolbar -->
-          <div class="stage-controls" role="toolbar" aria-label="0.9.0 交互工作台控制栏">
+          <div class="stage-controls" role="toolbar" aria-label="1.0.2 交互工作台控制栏">
             <span class="stage-live-badge">
               <span class="pulse-dot"></span>
-              <span>0.9.1 交互式工作台</span>
+              <span>1.0.2 交互式体验</span>
             </span>
             <div class="stage-quick-actions">
-              <button type="button" class="chip-action" id="btn-welcome-demo" aria-pressed="false">
-                <span>时区问候</span>
+              <button type="button" class="chip-action is-active" id="btn-scene-work">
+                <svg class="ic"><use href="#g-terminal" /></svg>
+                <span>工作时间线</span>
               </button>
-              <button type="button" class="chip-action" id="btn-split-toggle" aria-pressed="false">
-                <svg class="ic"><use href="#g-split" /></svg>
-                <span>双窗分屏</span>
+              <button type="button" class="chip-action" id="btn-scene-home">
+                <span>欢迎主页</span>
               </button>
-              <button type="button" class="chip-action" id="btn-stream-demo">
-                <svg class="ic"><use href="#g-bolt" /></svg>
-                <span>流式演示</span>
+              <button type="button" class="chip-action" id="btn-scene-chart">
+                <svg class="ic"><use href="#g-chart" /></svg>
+                <span>交互图表</span>
+              </button>
+              <button type="button" class="chip-action" id="btn-effort-open">
+                <svg class="ic"><use href="#g-gauge" /></svg>
+                <span>7 档滑块</span>
               </button>
             </div>
           </div>
 
           <!-- Phone Hardware Bezel -->
           <div class="phone-chassis" id="hero-phone">
-            <!-- Status Bar -->
+            <!-- Edge-to-Edge Status Bar -->
             <div class="android-statusbar">
-              <span class="sb-time" id="demo-clock">11:45</span>
+              <span class="sb-time" id="demo-clock">16:13</span>
               <div class="sb-icons">
                 <span class="sb-pill">5G</span>
                 <span class="sb-battery"><i></i></span>
               </div>
             </div>
 
-            <!-- Interactive NyaLLM 0.9.0 App View -->
+            <!-- Interactive NyaLLM 1.0.2 App View -->
             <div class="nya-app" id="nya-app-interactive">
-              <!-- 0.9.0 Top App Bar: Menu · Title · ⋯ · 新对话 · 后台窗口 -->
-              <div class="nya-topbar">
-                <button type="button" class="nya-sq-btn" id="demo-drawer-btn" title="打开历史侧栏">
+              <!-- 1.0.2 Frosted Minimal Top Bar -->
+              <div class="nya-topbar-102">
+                <button type="button" class="nya-circle-btn" id="demo-drawer-btn" title="打开侧栏与项目">
                   <svg class="ic"><use href="#g-menu" /></svg>
                 </button>
-                <span class="nya-app-title" id="topbar-chat-title">雨天书店路线</span>
-                <div class="nya-topbar-right">
-                  <button type="button" class="nya-sq-btn" id="demo-window-menu-btn" title="窗口操作菜单">
+
+                <!-- Center: [ 聊天 | 工作 ] on Home, or Locked Mode Label in Active Chat -->
+                <div class="mode-seg" id="demo-mode-seg" hidden>
+                  <button type="button" class="mode-seg-btn" data-app-mode="chat">聊天</button>
+                  <button type="button" class="mode-seg-btn is-active" data-app-mode="work">工作</button>
+                </div>
+                <span class="locked-mode-title" id="demo-locked-title">工作</span>
+
+                <!-- Right: Home (临时对话 + ⋯) or Active ([ ✎ | ⋯ ]) -->
+                <div class="topbar-right-home" id="topbar-right-home" hidden>
+                  <button type="button" class="nya-circle-btn" id="demo-temp-btn" title="临时对话（不落盘、屏蔽记忆）">
+                    <svg class="ic"><use href="#g-ghost" /></svg>
+                  </button>
+                  <button type="button" class="nya-circle-btn" id="demo-more-home-btn" title="窗口与历史菜单">
                     <svg class="ic"><use href="#g-dots" /></svg>
                   </button>
-                  <button type="button" class="nya-pill-btn is-pink" id="demo-new-chat">新对话</button>
-                  <button type="button" class="nya-sq-btn" id="demo-bg-windows-btn" title="后台窗口管理">
-                    <svg class="ic"><use href="#g-window" /></svg>
+                </div>
+                <div class="topbar-pill-pair" id="topbar-right-chat">
+                  <button type="button" class="pair-btn" id="demo-new-chat" title="回到新对话主页">
+                    <svg class="ic"><use href="#g-edit" /></svg>
+                  </button>
+                  <button type="button" class="pair-btn" id="demo-more-chat-btn" title="窗口操作与单行预览">
+                    <svg class="ic"><use href="#g-dots" /></svg>
                   </button>
                 </div>
               </div>
 
-              <!-- Anchored 0.9.0 Topbar Window Menu -->
-              <div class="nya-popover top-window-pop" id="popover-window" hidden>
-                <button type="button" class="pop-row" data-win-action="new-win">
-                  <svg class="ic"><use href="#g-window" /></svg>
-                  <span>新开独立窗口</span>
-                </button>
-                <button type="button" class="pop-row" data-win-action="split">
-                  <svg class="ic"><use href="#g-split" /></svg>
-                  <span>与对话分组</span>
-                </button>
-                <button type="button" class="pop-row" data-win-action="focus">
-                  <svg class="ic"><use href="#g-focus" /></svg>
-                  <span>独占全屏</span>
-                </button>
-                <button type="button" class="pop-row" data-win-action="min">
-                  <svg class="ic"><use href="#g-min" /></svg>
-                  <span>收起到后台窗口</span>
-                </button>
-                <button type="button" class="pop-row is-danger" data-win-action="close">
-                  <svg class="ic"><use href="#g-close" /></svg>
-                  <span>关闭窗口</span>
-                </button>
-              </div>
+              <!-- 1.0.2 Home Minimal Welcome Scene -->
+              <div class="home-102" id="scene-home" hidden>
+                <div class="home-mascot-sq">
+                  <img src="assets/brand/nyallm-launcher.png" alt="NyaLLM 徽章" width="54" height="54" />
+                </div>
+                <div class="home-greeting" id="welcome-greeting">下午好</div>
 
-              <!-- Body: Tilted Left Task Rail + Active Stage -->
-              <div class="nya-body">
-                <!-- Signature 3D-Tilted Taskbar -->
-                <aside class="nya-rail" id="nya-rail" aria-label="左侧倾斜任务卡">
-                  <button type="button" class="rail-card is-active" data-chat-id="artifact">
-                    <span class="rail-badge is-done" title="已完成">
-                      <svg class="ic"><use href="#g-check" /></svg>
-                    </span>
-                    <span class="rail-title">书店路线</span>
-                    <span class="rail-sub">产物 · 图表就绪</span>
+                <div class="home-status-pills" id="home-work-pills">
+                  <span class="status-chip is-pink">
+                    <svg class="ic ic-xs"><use href="#g-cube" /></svg>
+                    <span>Alpine Linux 3.21 · exec 就绪</span>
+                  </span>
+                  <button type="button" class="status-chip is-toggle" id="demo-minimal-toggle" aria-pressed="true">
+                    <svg class="ic ic-xs"><use href="#g-terminal" /></svg>
+                    <span id="demo-minimal-text">极简模式 · 仅命令行 + 按需加载省 Token</span>
                   </button>
-                  <button type="button" class="rail-card" data-chat-id="stream">
-                    <span class="rail-badge is-running" title="后台运行中"></span>
-                    <span class="rail-title">并行分析</span>
-                    <span class="rail-sub">子 Agent 推理</span>
+                </div>
+
+                <div class="home-quick-grid" id="home-quick-grid">
+                  <button type="button" class="quick-card" data-launch-scene="work">
+                    <svg class="ic ic-xs"><use href="#g-cube" /></svg>
+                    <span>容器巡检</span>
                   </button>
-                  <button type="button" class="rail-card" data-chat-id="phone">
-                    <span class="rail-badge is-idle" title="手机助手">
-                      <svg class="ic"><use href="#g-phone" /></svg>
-                    </span>
-                    <span class="rail-title">手机助手</span>
-                    <span class="rail-sub">等待确认操作</span>
+                  <button type="button" class="quick-card" data-launch-scene="browser">
+                    <svg class="ic ic-xs"><use href="#g-browser" /></svg>
+                    <span>隐私调研</span>
                   </button>
-                  <button type="button" class="rail-card" data-chat-id="search">
-                    <span class="rail-badge is-done" title="双引擎联网搜索">
-                      <svg class="ic"><use href="#g-search" /></svg>
-                    </span>
-                    <span class="rail-title">双源检索</span>
-                    <span class="rail-sub">Tavily 深入搜索</span>
+                  <button type="button" class="quick-card" data-launch-scene="chart">
+                    <svg class="ic ic-xs"><use href="#g-chart" /></svg>
+                    <span>数据图表</span>
                   </button>
-                </aside>
-
-                <!-- Main Stage Area (Supports Single, Welcome Greeting, or Split Dual-Pane) -->
-                <div class="nya-stage" id="nya-stage">
-                  <!-- Primary Pane -->
-                  <div class="nya-pane" id="pane-primary">
-                    <!-- 0.9.0 Timezone-Aware Welcome Screen (shown on 新对话 / 时区问候) -->
-                    <div class="welcome-stage" id="welcome-stage" hidden>
-                      <div class="welcome-greeting" id="welcome-greeting">中午好</div>
-                      <button type="button" class="welcome-tz" id="welcome-tz" title="点击查看当前时区详情">11:45 · GMT+8</button>
-                      <div class="welcome-tz-detail" id="welcome-tz-detail" hidden>本地时区已同步 · 开始输入后问候会自动淡出</div>
-                    </div>
-
-                    <!-- Messages Thread -->
-                    <div class="pane-messages" id="pane-primary-messages"></div>
-
-                    <!-- Translucent Glass Composer (0.9.0) -->
-                    <div class="nya-composer">
-                      <div class="composer-top">
-                        <input type="text" id="demo-input" class="composer-input" placeholder="发消息…（输入即自动淡出问候）" autocomplete="off" />
-                        <button type="button" class="composer-send" id="demo-send-btn">发送</button>
-                      </div>
-                      <div class="composer-bar">
-                        <button type="button" class="bar-chip" data-pop="attach">附件</button>
-                        <button type="button" class="bar-chip" id="demo-search-toggle" aria-pressed="false">搜索</button>
-                        <button type="button" class="bar-chip" data-pop="tools">工具</button>
-                        <button type="button" class="bar-chip is-model" data-pop="model" id="demo-model-chip">模型 · DeepSeek</button>
-                      </div>
-
-                      <!-- Anchored Tools Popover -->
-                      <div class="nya-popover pop-bottom" id="popover-tools" hidden>
-                        <button type="button" class="pop-row" data-tool-pick="思考强度滑块 · 自动显示官方思考链">
-                          <svg class="ic"><use href="#g-skill" /></svg>
-                          <div class="pop-stack"><span>思考强度</span><small>滑块微调 · 思考显示默认自动</small></div>
-                          <svg class="ic ic-xs"><use href="#g-right" /></svg>
-                        </button>
-                        <button type="button" class="pop-row" data-tool-pick="本地工具与子 Agent：编辑文档、表格与 PNG 绘图">
-                          <svg class="ic"><use href="#g-tools" /></svg>
-                          <div class="pop-stack"><span>本地工具与子 Agent</span><small>计算、分析、文档编辑与绘图</small></div>
-                        </button>
-                        <button type="button" class="pop-row" data-tool-pick="MCP Streamable HTTP 已就绪 · 调用前确认">
-                          <svg class="ic"><use href="#g-plug" /></svg>
-                          <div class="pop-stack"><span>MCP 工具 &amp; 技能</span><small>Streamable HTTP · SKILL.md</small></div>
-                          <svg class="ic ic-xs"><use href="#g-right" /></svg>
-                        </button>
-                        <button type="button" class="pop-row" data-tool-pick="手机助手护栏已就绪 · 敏感步骤二次确认">
-                          <svg class="ic"><use href="#g-phone" /></svg>
-                          <div class="pop-stack"><span>手机助手</span><small>无障碍服务 · 密码自动脱敏</small></div>
-                        </button>
-                      </div>
-
-                      <!-- Anchored Attach Popover -->
-                      <div class="nya-popover pop-bottom" id="popover-attach" hidden>
-                        <button type="button" class="pop-row" data-tool-pick="已挂载示例图片 · 支持产物预览与保存">
-                          <svg class="ic"><use href="#g-image" /></svg>
-                          <span>图片（JPEG / PNG / WebP）</span>
-                        </button>
-                        <button type="button" class="pop-row" data-tool-pick="已挂载示例 PDF / DOCX 文档">
-                          <svg class="ic"><use href="#g-paperclip" /></svg>
-                          <span>文件（PDF / DOCX / UTF-8）</span>
-                        </button>
-                        <button type="button" class="pop-row" data-tool-pick="已粘贴剪贴板文本片段">
-                          <svg class="ic"><use href="#g-copy" /></svg>
-                          <span>粘贴到输入框</span>
-                        </button>
-                      </div>
-
-                      <!-- Anchored Model Popover -->
-                      <div class="nya-popover pop-bottom pop-right" id="popover-model" hidden>
-                        <button type="button" class="pop-row is-selected" data-model-pick="DeepSeek">
-                          <svg class="ic"><use href="#g-chat" /></svg>
-                          <div class="pop-stack"><span>DeepSeek</span><small>deepseek-flash · 思考链</small></div>
-                          <svg class="ic ic-xs pop-check"><use href="#g-check" /></svg>
-                        </button>
-                        <button type="button" class="pop-row" data-model-pick="Gemini">
-                          <svg class="ic"><use href="#g-chat" /></svg>
-                          <div class="pop-stack"><span>Google Gemini</span><small>gemini-4-hydrogen</small></div>
-                        </button>
-                        <button type="button" class="pop-row" data-model-pick="OpenAI">
-                          <svg class="ic"><use href="#g-chat" /></svg>
-                          <div class="pop-stack"><span>OpenAI</span><small>gpt-5.4-mini · Responses</small></div>
-                        </button>
-                        <button type="button" class="pop-row" data-model-pick="Ollama">
-                          <svg class="ic"><use href="#g-chat" /></svg>
-                          <div class="pop-stack"><span>Ollama · 本地</span><small>无 Key /api/tags 自动发现</small></div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Draggable Split Divider -->
-                  <div class="split-divider" id="split-divider" hidden title="上下拖动调整双窗比例" role="separator" aria-orientation="horizontal" tabindex="0">
-                    <span class="split-pill"></span>
-                  </div>
-
-                  <!-- Secondary Split Pane -->
-                  <div class="nya-pane nya-pane-secondary" id="pane-secondary" hidden>
-                    <div class="pane-head">
-                      <span class="pane-title">分支窗口 · 并行对照</span>
-                      <button type="button" class="nya-mini-btn" id="close-split-btn">收起分屏</button>
-                    </div>
-                    <div class="pane-messages compact">
-                      <div class="msg-user">从上一条回复分支出去，改用 Ollama 本地模型核对 0.9.0 升级签名</div>
-                      <div class="msg-ai-wrap">
-                        <div class="msg-ai-head">Ollama · 并行分支</div>
-                        <div class="msg-ai-bubble">已验证：NyaLLM 0.9.0 延续同一升级证书，可从 0.8.0 直接覆盖安装，所有对话、记忆、附件与凭据完整保留。</div>
-                        <div class="msg-stats">输入 46 · 输出 58 token · 56.4 token/秒</div>
-                      </div>
-                    </div>
-                  </div>
+                  <button type="button" class="quick-card" data-launch-scene="stream">
+                    <svg class="ic ic-xs"><use href="#g-terminal" /></svg>
+                    <span>运行脚本</span>
+                  </button>
                 </div>
               </div>
 
-              <!-- 0.9.0 Background Windows Manager Sheet -->
-              <div class="nya-sheet-scrim" id="demo-bg-sheet" hidden>
-                <div class="nya-bg-panel">
-                  <div class="drawer-head">
-                    <button type="button" class="nya-sq-btn" id="demo-bg-close" aria-label="返回对话">
-                      <svg class="ic"><use href="#g-close" /></svg>
-                    </button>
-                    <span>后台窗口</span>
-                  </div>
-                  <div class="drawer-group-label">当前窗口</div>
-                  <div class="drawer-group">
-                    <button type="button" class="drawer-row is-current-win" data-bg-jump="artifact">
-                      <span>书店路线 · 产物与图表</span>
-                      <svg class="ic ic-xs"><use href="#g-check" /></svg>
+              <!-- 1.0.2 Active Chat Stream Scene -->
+              <div class="chat-102" id="scene-chat">
+                <div class="pane-messages-102" id="pane-primary-messages"></div>
+              </div>
+
+              <!-- Bottom-Right Draggable-Style Compact Privacy Browser Pill ([ ▢ 浏览器 × ]) -->
+              <div class="browser-pill-wrap" id="browser-pill-wrap">
+                <button type="button" class="browser-pill-open" id="demo-browser-open" title="展开内置隐私 Agent 浏览器">
+                  <svg class="ic ic-xs"><use href="#g-browser" /></svg>
+                  <span>浏览器</span>
+                </button>
+                <button type="button" class="browser-pill-close" id="demo-browser-close" aria-label="隐藏浏览器胶囊">
+                  <svg class="ic ic-xs"><use href="#g-close" /></svg>
+                </button>
+              </div>
+
+              <!-- 1.0.2 Ultra-Minimal Pure Pill Composer -->
+              <div class="composer-102-wrap">
+                <div class="composer-102">
+                  <button type="button" class="comp-plus" id="demo-plus-btn" title="附件 / 搜索 / 极简模式 / 浏览器">
+                    <svg class="ic"><use href="#g-plus" /></svg>
+                  </button>
+                  <input type="text" id="demo-input" class="comp-input" placeholder="输入工作任务（极简）…" autocomplete="off" />
+                  <button type="button" class="comp-gauge-btn" id="demo-gauge-btn" title="7 档思考强度滑块">
+                    <svg class="ic gauge-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                      <path d="M4.5 16.5a8.5 8.5 0 1 1 15 0" />
+                      <line id="demo-gauge-needle" x1="12" y1="15.5" x2="12" y2="8.5" />
+                      <circle cx="12" cy="15.5" r="1.4" fill="currentColor" />
+                    </svg>
+                  </button>
+                  <button type="button" class="comp-send-circle" id="demo-send-btn" title="发送消息体验实时流式">
+                    <svg class="ic ic-sm"><use href="#g-send" /></svg>
+                  </button>
+                </div>
+
+                <!-- Anchored + Menu Popover -->
+                <div class="nya-popover pop-bottom" id="popover-plus" hidden>
+                  <button type="button" class="pop-row" data-plus-action="minimal">
+                    <svg class="ic"><use href="#g-terminal" /></svg>
+                    <div class="pop-stack"><span>工作极简模式</span><small>按需加载工具 · 省输入 Token</small></div>
+                  </button>
+                  <button type="button" class="pop-row" data-plus-action="browser">
+                    <svg class="ic"><use href="#g-browser" /></svg>
+                    <div class="pop-stack"><span>内置隐私浏览器</span><small>桌面 UA · 不留系统后台任务</small></div>
+                  </button>
+                  <button type="button" class="pop-row" data-plus-action="chart">
+                    <svg class="ic"><use href="#g-chart" /></svg>
+                    <div class="pop-stack"><span>插入交互数据图表</span><small>折线 / 柱状 / 饼图 / 数据表</small></div>
+                  </button>
+                  <button type="button" class="pop-row" data-plus-action="search">
+                    <svg class="ic"><use href="#g-search" /></svg>
+                    <div class="pop-stack"><span>按需联网搜索</span><small>nya_web_search · 过滤日常寒暄</small></div>
+                  </button>
+                </div>
+              </div>
+
+              <!-- 1.0.2 Frosted 7-Level Effort Slider Overlay -->
+              <div class="nya-overlay-scrim" id="effort-overlay" hidden>
+                <div class="effort-sheet">
+                  <div class="effort-sheet-head">
+                    <span class="effort-sheet-title">思考强度 · <strong id="overlay-effort-name">高</strong></span>
+                    <button type="button" class="nya-circle-btn sm" id="effort-overlay-close" aria-label="关闭">
+                      <svg class="ic ic-xs"><use href="#g-close" /></svg>
                     </button>
                   </div>
-                  <div class="drawer-group-label">后台运行 / 已收起</div>
-                  <div class="drawer-group">
-                    <button type="button" class="drawer-row" data-bg-jump="stream"><span>并行分析 · 子 Agent 运行中</span><svg class="ic ic-xs"><use href="#g-right" /></svg></button>
-                    <button type="button" class="drawer-row" data-bg-jump="phone"><span>手机助手 · 等待确认</span><svg class="ic ic-xs"><use href="#g-right" /></svg></button>
-                    <button type="button" class="drawer-row" data-bg-jump="search"><span>双源检索 · Tavily 深入搜索</span><svg class="ic ic-xs"><use href="#g-right" /></svg></button>
+                  <p class="effort-sheet-sub" id="overlay-effort-desc">均衡深度推理与响应速度；Ultra 档自动挂载独立子 Agent 交叉核验。</p>
+                  <div class="effort-slider-wrap">
+                    <input type="range" id="phone-effort-range" class="nya-range" min="0" max="6" step="1" value="3" aria-label="7 档思考强度滑块" />
+                    <div class="effort-ticks">
+                      <span>自动</span><span>低</span><span>中</span><span>高</span><span>极高</span><span>Max</span><span>Ultra</span>
+                    </div>
                   </div>
-                  <button type="button" class="bg-clear-btn" id="demo-bg-clear">清除后台窗口（保留对话与草稿）</button>
                 </div>
               </div>
 
-              <!-- Slide-over History Drawer Demo -->
+              <!-- 1.0.2 In-App Privacy Browser Overlay -->
+              <div class="nya-overlay-scrim" id="browser-overlay" hidden>
+                <div class="privacy-browser-win">
+                  <div class="pb-bar">
+                    <span class="pb-ua-pill" id="pb-ua-toggle" title="点击切换桌面 / 移动 UA">桌面 UA</span>
+                    <span class="pb-url">https://ifdian.net/a/NyaLLM</span>
+                    <button type="button" class="nya-circle-btn sm" id="pb-hide-btn" title="隐藏至右下角胶囊">
+                      <svg class="ic ic-xs"><use href="#g-close" /></svg>
+                    </button>
+                  </div>
+                  <div class="pb-body">
+                    <div class="pb-badge">隐私无痕 · 系统任务列表不可见</div>
+                    <div class="pb-card">
+                      <strong>nya_browser DOM 双向桥接已就绪</strong>
+                      <p>支持 <code>open / read / click / type / scroll / eval</code>，在应用内完成网页调研与自动化；点右上角隐藏后自动收起为右下角不挡字胶囊 <code>[ ▢ 浏览器 × ]</code>。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1.0.2 Sidebar Drawer with Projects -->
               <div class="nya-drawer-scrim" id="demo-drawer" hidden>
                 <div class="nya-drawer-panel">
-                  <div class="drawer-head">
-                    <button type="button" class="nya-sq-btn" id="demo-drawer-close" aria-label="关闭侧栏">
-                      <svg class="ic"><use href="#g-close" /></svg>
+                  <div class="drawer-head-102">
+                    <img src="assets/brand/nyallm-launcher.png" alt="NyaLLM" width="28" height="28" class="drawer-ava" />
+                    <div>
+                      <div class="drawer-brand-name">NyaLLM</div>
+                      <div class="drawer-brand-ver">1.0.2 · 原生工作台</div>
+                    </div>
+                    <button type="button" class="nya-circle-btn sm" id="demo-drawer-close" aria-label="关闭侧栏">
+                      <svg class="ic ic-xs"><use href="#g-close" /></svg>
                     </button>
-                    <span>对话与窗口</span>
                   </div>
-                  <div class="drawer-group-label">当前窗口</div>
+                  <div class="drawer-group-label">项目 · Projects</div>
                   <div class="drawer-group">
-                    <button type="button" class="drawer-row" data-drawer-jump="artifact">雨天书店路线</button>
-                    <button type="button" class="drawer-row" data-drawer-jump="stream">并行分析</button>
+                    <button type="button" class="drawer-row" data-drawer-scene="work">
+                      <span class="proj-row"><i class="proj-dot" style="background:#D45B96"></i>Linux 容器与脚本</span>
+                    </button>
+                    <button type="button" class="drawer-row" data-drawer-scene="chart">
+                      <span class="proj-row"><i class="proj-dot" style="background:#4E7CF6"></i>数据分析与图表</span>
+                    </button>
                   </div>
-                  <div class="drawer-group-label">历史记录</div>
+                  <div class="drawer-group-label">最近对话</div>
                   <div class="drawer-group">
-                    <button type="button" class="drawer-row" data-drawer-jump="phone">手机助手</button>
-                    <button type="button" class="drawer-row" data-drawer-jump="search">双源检索</button>
+                    <button type="button" class="drawer-row" data-drawer-scene="work">Alpine 3.21 RootFS 巡检</button>
+                    <button type="button" class="drawer-row" data-drawer-scene="browser">隐私浏览器桌面调研</button>
+                    <button type="button" class="drawer-row" data-drawer-scene="home">新对话欢迎主页</button>
                   </div>
                   <div class="drawer-footer">
                     <svg class="ic"><use href="#g-settings" /></svg>
-                    <span>设置 · NyaLLM 0.9.1</span>
+                    <span>设置 · 用量与计费 · NyaLLM 1.0.2</span>
                   </div>
                 </div>
               </div>
@@ -613,76 +495,74 @@
           </div>
 
           <p class="stage-hint">
-            ↑ 点击左侧斜切卡片、顶部「⋯ / 新对话 / 后台窗口」、展开「活动 · 4 步」、拖动分屏条，或在底部发消息体验 0.9.1
+            ↑ 试试切换「工作时间线 / 欢迎主页 / 交互图表」、展开思考步骤、点击右下角「浏览器」胶囊、滑动「7 档滑块」，或在底部输入发消息
           </p>
         </div>
       </div>
     </section>
 
     <!-- ================================================================
-         SECTION 2: ASYMMETRIC EDITORIAL BENTO CAPABILITIES (0.9.1)
+         SECTION 2: ASYMMETRIC EDITORIAL BENTO CAPABILITIES (1.0.2)
          ================================================================ -->
     <section class="section features-section" id="features">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">ARCHITECTURE &amp; CRAFT · 0.9.1</span>
-          <h2 class="section-title">不止聊天，是随身可编程的 Agent 工作台</h2>
-          <p class="section-sub">从窗口调度、本地工具与绘图产物，到双引擎搜索与无障碍安全护栏，全部原生手写，拒绝黑盒与臃肿。</p>
-          <a href="/features/" class="section-more-link">查看全部核心功能详解 →</a>
+          <span class="eyebrow">ARCHITECTURE &amp; CRAFT · 1.0.2</span>
+          <h2 class="section-title">不只是聊天框，是装进口袋的原生 Agent 工作站</h2>
+          <p class="section-sub">本地 Linux RootFS 容器、隐私浏览器、7 档思考与统一时间线、原生交互图表与用量热力图，全套纯原生实现。</p>
         </div>
 
         <div class="bento-grid">
-          <!-- Card 1: Stage Workbench + Background Manager + Carousel Layout (Span 2) -->
+          <!-- Card 1: Local Linux Container + Work Minimal Mode (Span 2) -->
           <article class="bento-card span-2 reveal">
             <div class="bento-kicker">
-              <svg class="ic"><use href="#g-stage" /></svg>
-              <span>多窗调度 · 后台管理 · 双布局</span>
+              <svg class="ic"><use href="#g-terminal" /></svg>
+              <span>本地 Linux 容器 · 工作极简模式</span>
             </div>
-            <h3>斜切任务栏、横向循环布局与一键后台窗口清理</h3>
+            <h3>完整 RootFS + <code>exec</code> 权限，按需加载工具大幅省 Token</h3>
             <p>
-              顶栏直显当前对话标题，点「⋯」即可新开窗口、双窗分组、独占全屏或收起；点叠窗图标进入「后台窗口」统一切换或一键停止后台任务且完整保留草稿。还可在「设置 → 窗口布局」切换为<strong>横向循环</strong>模式，全高侧栏手势随手唤出。
+              内置原生 Linux 容器环境，开放私有目录 <code>exec</code> 执行权限并完整还原 POSIX 符号链接、硬链接与可执行位（<code>nya-exec / busybox / apk</code>），可选 4 大发行版、3 种架构与可选桌面环境。工作模式默认开启<strong>极简模式</strong>，首轮仅暴露命令行与 <code>nya_load_tools</code>，任务中途按需挂载浏览器、搜索、图表与文件工具。
             </p>
             <div class="bento-visual stage-mini-strip">
               <div class="mini-tilted-card">
-                <span class="dot-live"></span>
-                <strong>后台窗口管理</strong>
-                <span>统一查看与安全清除</span>
+                <span class="dot-pink">🐧</span>
+                <strong>4 大官方发行版</strong>
+                <span>Alpine / Ubuntu / Debian / Arch</span>
               </div>
               <div class="mini-tilted-card">
                 <span class="dot-green">✓</span>
-                <strong>多任务 / 横向循环</strong>
-                <span>两种手势布局自由切</span>
+                <strong>exec &amp; RootFS 还原</strong>
+                <span>完整符号链接 · exit 0 实测</span>
               </div>
               <div class="mini-tilted-card">
-                <span class="dot-pink">⊞</span>
-                <strong>独占全屏与分屏</strong>
-                <span>拖拽合屏 · 动画可打断</span>
+                <span class="dot-slate">VNC</span>
+                <strong>可选桌面环境</strong>
+                <span>CLI / XFCE4 / LXQt / Openbox</span>
               </div>
               <div class="mini-tilted-card">
-                <span class="dot-slate">ZIP</span>
-                <strong>全量工作区备份</strong>
-                <span>含消息、背景、附件与产物</span>
+                <span class="dot-live"></span>
+                <strong>按需加载省 Token</strong>
+                <span>nya_load_tools 动态挂载工具</span>
               </div>
             </div>
           </article>
 
-          <!-- Card 2: Artifacts, Local Tools, MCP & SKILL.md -->
+          <!-- Card 2: In-App Privacy Agent Browser + MCP & SKILL.md -->
           <article class="bento-card reveal">
             <div class="bento-kicker">
-              <svg class="ic"><use href="#g-plug" /></svg>
-              <span>本地工具 · 产物 · MCP &amp; SKILL.md</span>
+              <svg class="ic"><use href="#g-browser" /></svg>
+              <span>隐私 Agent 浏览器 · MCP &amp; SKILL.md</span>
             </div>
-            <h3>模型可直接编辑文档、绘 PNG 图并直连 MCP</h3>
+            <h3>系统后台无痕，支持桌面 UA 与 DOM 双向自动化</h3>
             <p>
-              内置计算、时间、独立分析子 Agent、<strong>文档/表格编辑与 PNG 绘图</strong>，执行活动可展开查看每一步参数，并支持展示与保存模型产物；同时完整支持 MCP Streamable HTTP（JSON/SSE）、<code>SKILL.md</code> 与「浏览器与 SSH」快捷拉起。
+              浏览器直接嵌在 <code>MainActivity</code> 视图层，不在系统最近任务留痕；支持自由拖动/缩放 4:3 小窗、一键切换桌面/移动 UA，隐藏后收为右下角不挡字紧凑胶囊 <code>[ ▢ 浏览器 × ]</code>。同时完整支持 MCP Streamable HTTP（调用前确认）与 <code>SKILL.md</code>。
             </p>
-            <!-- Interactive MCP Confirm Preview -->
             <div class="mcp-confirm-box" id="mcp-demo-card">
               <div class="mcp-confirm-head">
-                <span class="mcp-tag">MCP 调用确认</span>
-                <code>chart.render_png</code>
+                <span class="mcp-tag">工具按需挂载 · 确认</span>
+                <code>nya_browser.open</code>
               </div>
-              <div class="mcp-args">{ "file": "步行时间.png", "theme": "nya" }</div>
+              <div class="mcp-args">{ "url": "https://ifdian.net/a/NyaLLM", "ua": "desktop" }</div>
               <div class="mcp-confirm-actions">
                 <button type="button" class="mini-pill is-pink" id="mcp-allow-btn">允许调用</button>
                 <button type="button" class="mini-pill" id="mcp-deny-btn">拒绝</button>
@@ -691,118 +571,116 @@
             </div>
           </article>
 
-          <!-- Card 3: Phone Assistant Guardrails -->
+          <!-- Card 3: 7-Level Thinking Effort + Unified Step Timeline -->
+          <article class="bento-card reveal">
+            <div class="bento-kicker">
+              <svg class="ic"><use href="#g-gauge" /></svg>
+              <span>7 档思考强度 · 统一每步时间线</span>
+            </div>
+            <h3>粉白滑块联动动态指针，每轮思考克制清晰</h3>
+            <p>
+              思考强度扩展至 <strong>7 档（自动 → Ultra）</strong>，Ultra 自动挂载独立子 Agent（<code>nya_subagent</code>）交叉核验；移除繁琐框选按钮，所有思考与命令以无灯泡统一时间线呈现，支持简洁/完整双预览、模型自动总结每小步与单行上下文占用统计。
+            </p>
+            <div class="bento-effort-card">
+              <div class="bento-effort-head">
+                <span>当前档位：<strong id="bento-effort-label">高</strong></span>
+                <code id="bento-effort-route">DeepSeek high · 标准深度</code>
+              </div>
+              <input type="range" id="bento-effort-range" class="nya-range" min="0" max="6" step="1" value="3" aria-label="思考强度档位体验" />
+              <div class="effort-ticks">
+                <span>自动</span><span>低</span><span>中</span><span>高</span><span>极高</span><span>Max</span><span>Ultra</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Native Interactive Charts + Usage Heatmap & Billing -->
+          <article class="bento-card reveal">
+            <div class="bento-kicker">
+              <svg class="ic"><use href="#g-chart" /></svg>
+              <span>对话内交互图表 · 用量热力图与余额</span>
+            </div>
+            <h3>气泡内原生看图表，热力图与服务商余额一目了然</h3>
+            <p>
+              通过 <code>nya_interactive_chart</code> 或 <code>```chart</code> 直接渲染原生折线 / 柱状 / 面积 / 饼图 / 数据表，支持手指滑动实时探针、图例过滤与 CSV 复制；「使用情况与计费」内置每日/每月/每年 Token 热力图、DeepSeek / Kimi / OpenRouter 实时余额查询与模型调用排行。
+            </p>
+            <div class="heatmap-preview" id="heatmap-preview" aria-label="Token 热力图示意"></div>
+          </article>
+
+          <!-- Card 5: Projects, Memory Summary, Ephemeral Chat & Phone Guardrails -->
           <article class="bento-card reveal">
             <div class="bento-kicker">
               <svg class="ic"><use href="#g-shield" /></svg>
-              <span>手机助手 · 硬安全护栏</span>
+              <span>对话项目 · 记忆摘要 · 手机助手护栏</span>
             </div>
-            <h3>看得懂屏幕，也守得住底线</h3>
+            <h3>工作区井井有条，隐私与安全护栏始终在线</h3>
             <p>
-              开启系统无障碍服务后，仅在你发起任务时按需读取前台节点与截图（Android 11+），平时零事件记录。
+              侧栏「项目」支持专属主题色与项目指令；临时对话不落盘并自动屏蔽本机记忆；内置 5 套双模提示词（NyaLLM / Codex / ChatGPT / Gemini / Claude）与 AI 提炼记忆摘要；无障碍手机助手保留硬安全护栏。
             </p>
             <ul class="guardrail-list">
-              <li><span class="g-pill">自动脱敏</span> 密码与验证码框替换为 <code>[密码已隐藏]</code>，禁止代填</li>
-              <li><span class="g-pill">敏感拦截</span> 支付、转账、删除、发送、权限与坐标点击必弹确认浮层</li>
-              <li><span class="g-pill">自我隔离</span> 硬编码禁止操控 NyaLLM 自身设置与授权页</li>
+              <li><span class="g-pill">防误搜</span> 工具模式改由模型按需调用 <code>nya_web_search</code>，问候寒暄绝不误触发搜索</li>
+              <li><span class="g-pill">全套快捷栏</span> 复制绿勾、系统 TTS 朗读、分享、语音听写、相机拍照与错误内联重试</li>
+              <li><span class="g-pill">无障碍护栏</span> 密码与验证码自动脱敏 <code>[密码已隐藏]</code>，支付/删除/权限必弹确认</li>
             </ul>
           </article>
 
-          <!-- Card 4: Branching, Memory & Multimodal Attachments -->
-          <article class="bento-card reveal">
-            <div class="bento-kicker">
-              <svg class="ic"><use href="#g-branch" /></svg>
-              <span>对话分支 · 本机记忆 · 多模态附件</span>
-            </div>
-            <h3>单条消息可分支新窗，本机记忆与历史按需注入</h3>
-            <p>
-              消息支持一键复制、编辑、删除、<strong>分支到新窗口</strong>与重新生成；初次回复后可自动总结标题。「记忆与历史」允许编辑本机持久记忆并自动摘录相关历史上下文，附件支持图片、PDF、DOCX 与 UTF-8 文档预览保存。
-            </p>
-            <div class="file-chip-row">
-              <span class="file-chip">分支新窗口</span>
-              <span class="file-chip">自动总结标题</span>
-              <span class="file-chip">本机记忆与历史摘录</span>
-              <span class="file-chip">PDF / DOCX / PNG 产物</span>
-            </div>
-          </article>
-
-          <!-- Card 5: DeepSeek + Tavily Dual Search & Reasoning Slider -->
-          <article class="bento-card reveal">
-            <div class="bento-kicker">
-              <svg class="ic"><use href="#g-search" /></svg>
-              <span>DeepSeek + Tavily 双搜索 · 思考滑块</span>
-            </div>
-            <h3>双搜索引擎自由选，思考显示默认自动</h3>
-            <p>
-              联网搜索支持 <strong>DeepSeek</strong> 与 <strong>Tavily</strong>（各自保存 Key，可选 1–10 条结果，Tavily 支持深入搜索且读取公开网页逐次确认）。0.9.0 将「思考显示」默认升级为自动，并可在单段对话用滑块细腻调整思考强度。
-            </p>
-            <div class="effort-bar" role="group" aria-label="思考强度演示">
-              <button type="button" class="effort-pill" data-effort="自动 · 默认展开接口返回的官方思考链">自动</button>
-              <button type="button" class="effort-pill" data-effort="轻量 · 快速直出响应">轻量</button>
-              <button type="button" class="effort-pill is-active" data-effort="标准 · 平衡速度与推理深度">标准</button>
-              <button type="button" class="effort-pill" data-effort="深入 · 完整深度推理链">深入</button>
-            </div>
-            <div class="effort-caption" id="effort-caption">标准 · 平衡速度与推理深度</div>
-          </article>
-
-          <!-- Card 6: NyaStyle 0.9.0 Live Theme Presets & Swatches (Span 2) -->
+          <!-- Card 6: NyaStyle 1.0 High-Contrast & Live Theme Presets (Span 2) -->
           <article class="bento-card span-2 reveal">
             <div class="bento-kicker">
               <svg class="ic"><use href="#g-palette" /></svg>
-              <span>NyaStyle 0.9.0 · 四套官方配色 &amp; 自定义背景</span>
+              <span>NyaStyle 1.0 · 高对比度、全屏轻高斯模糊 &amp; 四大配色</span>
             </div>
-            <h3>内置四套主题预设，支持 <code>#RRGGBB</code> 自定义色与设备背景图</h3>
+            <h3>Edge-to-Edge 渐进轻高斯模糊，四套官方配色实时换肤</h3>
             <p>
-              0.9.0 延续连续超椭圆曲率 <code>|t|^0.63</code>、Android 12+ 模糊渲染与半透明输入区材质，新增四套官方主题配色及 4 种字体族（思源黑体 / 系统 / 衬线 / 等宽）。点下方按钮可<strong>直接实时切换整个官网与演示工作台的配色</strong>：
+              1.0 全面升级高对比度色彩与 1.85dp 清晰矢量描边，Android 12+ 支持状态栏与底部胶囊下方 6.5–7.5dp 渐进轻高斯模糊与 GPU 加速逐字模糊聚焦流式输出，支持自定义 <code>#RRGGBB</code> 与设备背景图。点击下方即可<strong>实时切换整个官网与工作台配色</strong>：
             </p>
-            <div class="preset-bar" role="group" aria-label="NyaLLM 0.9.0 官方主题配色实时预览">
+            <div class="preset-bar" role="group" aria-label="NyaLLM 1.0 官方主题配色实时预览">
               <button type="button" class="preset-chip is-active" data-set-preset="nya">
-                <i style="background:#B7739C"></i>
+                <i style="background:#D45B96"></i>
                 <span>NyaLLM · 白纸浅粉</span>
               </button>
               <button type="button" class="preset-chip" data-set-preset="chatgpt">
-                <i style="background:#529782"></i>
+                <i style="background:#10A37F"></i>
                 <span>ChatGPT · 清雅翡翠</span>
               </button>
               <button type="button" class="preset-chip" data-set-preset="gemini">
-                <i style="background:#767FCD"></i>
-                <span>Gemini · 雾蓝晴紫</span>
+                <i style="background:#4E7CF6"></i>
+                <span>Gemini · 晴蓝星紫</span>
               </button>
               <button type="button" class="preset-chip" data-set-preset="claude">
-                <i style="background:#B77760"></i>
+                <i style="background:#C96442"></i>
                 <span>Claude · 暖羊皮纸</span>
               </button>
             </div>
             <div class="swatch-grid" id="swatch-grid">
-              <button type="button" class="swatch-card" data-copy-hex="#F8E7EF" style="--sw:#F8E7EF;">
+              <button type="button" class="swatch-card" data-copy-hex="#FBE6F1" style="--sw:#FBE6F1;">
                 <span class="sw-dot"></span>
                 <span class="sw-name">樱雾浅粉</span>
-                <code class="sw-hex">#F8E7EF</code>
+                <code class="sw-hex">#FBE6F1</code>
               </button>
-              <button type="button" class="swatch-card" data-copy-hex="#B7739C" style="--sw:#B7739C;">
+              <button type="button" class="swatch-card" data-copy-hex="#B83978" style="--sw:#B83978;">
                 <span class="sw-dot"></span>
-                <span class="sw-name">Nya 主题色</span>
-                <code class="sw-hex">#B7739C</code>
+                <span class="sw-name">Nya 高对比粉</span>
+                <code class="sw-hex">#B83978</code>
               </button>
-              <button type="button" class="swatch-card" data-copy-hex="#529782" style="--sw:#529782;">
+              <button type="button" class="swatch-card" data-copy-hex="#10A37F" style="--sw:#10A37F;">
                 <span class="sw-dot"></span>
                 <span class="sw-name">ChatGPT 绿</span>
-                <code class="sw-hex">#529782</code>
+                <code class="sw-hex">#10A37F</code>
               </button>
-              <button type="button" class="swatch-card" data-copy-hex="#767FCD" style="--sw:#767FCD;">
+              <button type="button" class="swatch-card" data-copy-hex="#4E7CF6" style="--sw:#4E7CF6;">
                 <span class="sw-dot"></span>
-                <span class="sw-name">Gemini 紫</span>
-                <code class="sw-hex">#767FCD</code>
+                <span class="sw-name">Gemini 蓝</span>
+                <code class="sw-hex">#4E7CF6</code>
               </button>
-              <button type="button" class="swatch-card" data-copy-hex="#B77760" style="--sw:#B77760;">
+              <button type="button" class="swatch-card" data-copy-hex="#C96442" style="--sw:#C96442;">
                 <span class="sw-dot"></span>
                 <span class="sw-name">Claude 陶土</span>
-                <code class="sw-hex">#B77760</code>
+                <code class="sw-hex">#C96442</code>
               </button>
-              <button type="button" class="swatch-card" data-copy-hex="#15181D" style="--sw:#15181D;">
+              <button type="button" class="swatch-card" data-copy-hex="#0D0F14" style="--sw:#0D0F14;">
                 <span class="sw-dot"></span>
                 <span class="sw-name">深夜画布</span>
-                <code class="sw-hex">#15181D</code>
+                <code class="sw-hex">#0D0F14</code>
               </button>
             </div>
           </article>
@@ -816,10 +694,9 @@
     <section class="section providers-section" id="providers">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">BRING YOUR OWN KEY · LOCAL OR CLOUD</span>
-          <h2 class="section-title">8 大服务商预设，各自独立保存与快切</h2>
-          <p class="section-sub">每个服务商拥有独立配置页：API Key、自定义请求头、兼容多格式的模型列表拉取、文档预设回退与错误就地提示。所有凭据仅留存在你的手机本机。</p>
-          <a href="/providers/" class="section-more-link">查看 8 大服务商端点与 Ollama 本地接入指南 →</a>
+          <span class="eyebrow">OFFICIAL VECTOR BRAND ICONS · LOCAL OR CLOUD</span>
+          <h2 class="section-title">8 大服务商预设，官方矢量图标与实时余额查询</h2>
+          <p class="section-sub">OpenAI、Gemini、DeepSeek、Kimi、Qwen、GLM、Ollama 均采用深浅色自适应官方矢量图标，支持独立请求头、模型拉取、实时余额/预算追踪，凭据仅留存在你自己的手机本地。</p>
         </div>
 
         <div class="providers-shell reveal">
@@ -847,13 +724,13 @@
               <code class="prov-ep-url" id="prov-url">https://api.openai.com/v1</code>
             </div>
             <p class="prov-note" id="prov-note">
-              支持通过 Responses API 请求官方思考概括；可一键「拉取模型」搜索全部可用模型，并按需配置上下文预算、自定义请求头与输出 Token 上限。
+              支持通过 Responses API 请求官方思考概括，Ultra 档自动路由至最高思考深度（xhigh）；可一键「拉取模型」、追踪月度预算余量，并配置独立请求头与上下文上限。
             </p>
             <div class="prov-caps" id="prov-caps">
               <span>流式 SSE</span>
               <span>Responses 思考概括</span>
-              <span>PDF 原生文件输入</span>
-              <span>自定义请求头</span>
+              <span>7 档思考路由</span>
+              <span>官方矢量图标</span>
             </div>
           </div>
         </div>
@@ -861,65 +738,57 @@
     </section>
 
     <!-- ================================================================
-         SECTION 4: RELEASE EVOLUTION TIMELINE (0.4.x -> 0.9.0)
+         SECTION 4: RELEASE EVOLUTION TIMELINE (0.9.x -> 1.0.2)
          ================================================================ -->
     <section class="section changelog-section" id="changelog">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">RELEASE EVOLUTION · 0.4.0 → 0.9.1</span>
-          <h2 class="section-title">一路打磨，从原型走向全能纯原生工作台</h2>
-          <p class="section-sub">从彻底剥离 WebView 的 0.4.0 开始，每个版本都由真实模拟器和 2,000 次状态机回归验证把关。</p>
-          <a href="/changelog/" class="section-more-link">查看完整版本更新日志 →</a>
+          <span class="eyebrow">RELEASE EVOLUTION · 0.4.0 → 1.0.2</span>
+          <h2 class="section-title">高速迭代，迈入 1.0 全能 Agent 工作台时代</h2>
+          <p class="section-sub">每个版本均在 Android 15 实机完成覆盖安装、v2/v3 签名校验与 42+ 项工作区/2,000 次状态迁移回归。</p>
         </div>
 
         <div class="timeline-grid reveal">
           <div class="tl-item is-latest">
-            <div class="tl-ver"><span>0.9.1</span><small>最新</small></div>
+            <div class="tl-ver"><span>1.0.2</span><small>最新</small></div>
             <div class="tl-body">
-              <h4>侧边窗口卡片透视与阴影细节修复</h4>
-              <p>对照视觉参考精修左侧斜切任务卡的透视几何：首张卡片保持接近水平、下方卡片顶边平滑向右下倾斜，两侧边维持竖直且阴影自然落在卡片下方，延续同签名支持直接覆盖升级。</p>
+              <h4>Linux 完整 RootFS / exec 权限、工作极简模式与交互细节全面精修</h4>
+              <p>开放私有目录 <code>exec</code> 权限并完整还原 4 大发行版 RootFS 符号链接与可执行位；工作模式默认开启极简模式与 <code>nya_load_tools</code> 按需加载省 Token；工具模式按需联网搜索防寒暄误触发；统一无灯泡每步思考链并新增单行上下文占比统计；修复 2 列 Markdown 表格裁切、横向滑屏手势防冲突，并将隐藏浏览器胶囊移至右下角不挡字位置。</p>
             </div>
           </div>
           <div class="tl-item">
-            <div class="tl-ver"><span>0.9.0</span></div>
+            <div class="tl-ver"><span>1.0.1</span></div>
             <div class="tl-body">
-              <h4>后台窗口、时区问候、四套配色、Tavily 搜索与模型产物</h4>
-              <p>新增后台窗口统一管理与一键清理、横向循环布局、NyaLLM/ChatGPT/Gemini/Claude 配色预设与自定义背景图、Tavily 深入搜索、对话分支新窗、本机记忆、自动总结标题、文档/表格编辑与 PNG 绘图产物，以及 Ollama 无 Key <code>/api/tags</code> 局域网模型发现。</p>
+              <h4>7 档思考动态指针、全屏状态栏/底栏轻高斯模糊与对话项目</h4>
+              <p>扩展至 7 档思考（Ultra 挂载子 Agent）、粉白双色滑块与动态仪表盘指针；Edge-to-Edge 渐进轻高斯模糊与逐字模糊聚焦流式；新增对话项目（Projects）、无上限工具步数、每步独立思考与双预览时间线，以及 Linux 发行版/架构/VNC 桌面与隐私浏览器桌面 UA。</p>
             </div>
           </div>
           <div class="tl-item">
-            <div class="tl-ver"><span>0.8.0</span></div>
+            <div class="tl-ver"><span>1.0.0</span></div>
             <div class="tl-body">
-              <h4>锚定动作菜单、流式保位与多服务商独立配置</h4>
-              <p>窗口、附件、工具、模型与历史菜单全部从按键旁就地展开；流式生成时锁住阅读位置与「回到最新」；多服务商独立凭据、请求头隔离与拉取模型搜索。</p>
+              <h4>隐私 Agent 浏览器、极简胶囊界面、Linux 容器、交互图表与用量看板</h4>
+              <p>上线无痕内置隐私浏览器（<code>nya_browser</code> DOM 桥接）、<code>[ 聊天 | 工作 ]</code> 极简顶栏与单行胶囊输入、本地 Linux 工作容器、5 套双模提示词预设、对话内原生交互图表、记忆摘要、单行历史预览与 Token 热力图/实时余额看板。</p>
             </div>
           </div>
           <div class="tl-item">
-            <div class="tl-ver"><span>0.7.0</span></div>
+            <div class="tl-ver"><span>0.9.3</span></div>
             <div class="tl-body">
-              <h4>联网搜索、子 Agent 与实时生成统计</h4>
-              <p>接入 DeepSeek Search 联网溯源、内置计算/时间与独立只读子 Agent、长对话自动摘要压缩，以及回复底部 token/s 速度统计与运行中角标。</p>
+              <h4>透明高斯模糊顶栏、官方矢量服务商图标与全套手机端快捷功能</h4>
+              <p>Android 12+ 实时背景模糊顶栏、高对比度配色与 7 家服务商官方矢量图标；补齐临时对话、TTS 语音朗读、语音听写、相机拍照、对话内搜索高亮、侧栏置顶/全文检索与一键导出 Markdown。</p>
             </div>
           </div>
           <div class="tl-item">
-            <div class="tl-ver"><span>0.6.0</span></div>
+            <div class="tl-ver"><span>0.9.x</span></div>
             <div class="tl-body">
-              <h4>拖拽双窗工作台与多模态附件</h4>
-              <p>任务卡拖入主区创建双窗组、宽屏并排可调分割线、多窗并行 SSE 流式，支持图片/PDF/DOCX 附件预览与 ZIP 全量备份往返。</p>
+              <h4>后台窗口、四套官方配色、Tavily 双搜索与完整 Markdown 重构</h4>
+              <p>带来后台窗口管理、横向循环布局、时区问候、NyaLLM / ChatGPT / Gemini / Claude 配色预设、对话分支新窗、本机记忆、模型绘图产物与原生多级标题/表格 Markdown 渲染。</p>
             </div>
           </div>
           <div class="tl-item">
-            <div class="tl-ver"><span>0.5.0</span></div>
+            <div class="tl-ver"><span>0.4–0.8</span></div>
             <div class="tl-body">
-              <h4>浅粉原生界面、MCP 与手机助手</h4>
-              <p>上线完整 MCP Streamable HTTP 工具调用确认、<code>SKILL.md</code> 技能导入与按对话启用、Android 无障碍手机助手与明暗双主题。</p>
-            </div>
-          </div>
-          <div class="tl-item">
-            <div class="tl-ver"><span>0.4.x</span></div>
-            <div class="tl-body">
-              <h4>零 WebView 纯原生重构与新版猫娘图标</h4>
-              <p>彻底移除 HTML/CSS/JS 与 WebView 依赖，纯 Java 原生控件重绘全部界面，并在 0.4.1 定稿白底粉描边猫娘标志图标。</p>
+              <h4>零 WebView 纯原生重写、猫娘图标、MCP、手机助手与双窗工作台</h4>
+              <p>彻底移除 WebView 并以纯 Java 手绘超椭圆控件，定稿白底粉描边猫娘图标，陆续完成 MCP Streamable HTTP、<code>SKILL.md</code>、无障碍手机助手护栏、拖拽双窗分屏与多服务商独立配置。</p>
             </div>
           </div>
         </div>
@@ -951,7 +820,7 @@
                   <span class="creator-role">正在创作 NyaLLM 客户端</span>
                 </div>
                 <p class="creator-bio">
-                  「正在严肃 vibe（）」—— 如果 NyaLLM 的白纸浅粉、多窗工作台或纯原生手感刚好戳中了你，欢迎来爱发电投喂支持，每一份发电都会变成继续肝新版本与真机适配的动力。
+                  「正在严肃 vibe（）」—— 如果 NyaLLM 的白纸浅粉、本地 Linux 容器、隐私浏览器或纯原生手感刚好戳中了你，欢迎来爱发电投喂支持，每一份发电都会变成继续打磨新版本与真机适配的动力。
                 </p>
               </div>
             </div>
@@ -980,7 +849,7 @@
                 <span class="price-unit">/ 月</span>
               </div>
               <p class="tier-desc">
-                一杯冰美式或快乐水的价格，支持独立开发者持续打磨 NyaLLM 原生交互、协议适配与后续更新。
+                一杯冰美式或快乐水的价格，支持独立开发者持续打磨 NyaLLM 原生交互、Linux 容器与后续更新。
               </p>
               <a href="https://ifdian.net/a/NyaLLM" target="_blank" rel="noopener noreferrer" class="btn btn-ifdian tier-cta">
                 <svg class="ic"><use href="#g-bolt" /></svg>
@@ -1031,7 +900,7 @@
     </section>
 
     <!-- ================================================================
-         SECTION 6: DOWNLOAD, CHECKSUMS & UPGRADE GUIDE (0.9.0)
+         SECTION 6: DOWNLOAD, CHECKSUMS & UPGRADE GUIDE (1.0.2)
          ================================================================ -->
     <section class="section download-section" id="download">
       <div class="container">
@@ -1040,25 +909,25 @@
             <div class="dl-head">
               <img src="assets/brand/nyallm-launcher.png" alt="NyaLLM 应用图标" class="dl-icon" />
               <div>
-                <span class="eyebrow">RELEASE v0.9.1 · VERIFIED v2/v3 SIGNED</span>
-                <h2>获取 NyaLLM 0.9.1</h2>
+                <span class="eyebrow">RELEASE v1.0.2 · VERIFIED v2/v3 SIGNED</span>
+                <h2>获取 NyaLLM 1.0.2</h2>
               </div>
             </div>
             <p class="dl-summary">
-              适用于 <strong>Android 8.0（API 26）及以上</strong>设备（Target SDK 35，Android 12+ 启用模糊渲染）。支持从同签名的 NyaLLM 0.4.x – 0.9.0 直接覆盖升级，本机配置与密钥完整保留。
+              适用于 <strong>Android 8.0（API 26）及以上</strong>设备（兼容 Android 15，采用 <code>targetSdkVersion 28</code> 以开放本地 Linux 容器 <code>exec</code> 权限，Android 12+ 启用全屏轻高斯模糊）。支持从同签名的旧版直接覆盖安装。
             </p>
             <div class="dl-actions">
-              <a href="downloads/NyaLLM-0.9.1.apk" download="NyaLLM-0.9.1.apk" class="btn btn-primary btn-lg">
+              <a href="https://github.com/xiaoheiHZ/NyaLLM/releases/download/v1.0.2/NyaLLM-1.0.2.apk" class="btn btn-primary btn-lg">
                 <svg class="ic"><use href="#g-download" /></svg>
-                <span>高速直下 NyaLLM APK</span>
-                <span class="btn-meta">7.61 MB</span>
+                <span>GitHub Release 下载 APK</span>
+                <span class="btn-meta">7.87 MB</span>
               </a>
-              <a href="https://github.com/xiaoheiHZ/NyaLLM/releases/download/v0.9.1/NyaLLM-0.9.1.apk" class="btn btn-subtle btn-lg">
+              <a href="downloads/NyaLLM-1.0.2.apk" download="NyaLLM-1.0.2.apk" class="btn btn-subtle btn-lg">
+                <svg class="ic"><use href="#g-download" /></svg>
+                <span>站点镜像直下</span>
+              </a>
+              <a href="https://github.com/xiaoheiHZ/NyaLLM/releases/tag/v1.0.2" target="_blank" rel="noopener noreferrer" class="btn btn-subtle btn-lg">
                 <svg class="ic"><use href="#g-github" /></svg>
-                <span>GitHub Release 下载</span>
-              </a>
-              <a href="https://github.com/xiaoheiHZ/NyaLLM/releases/tag/v0.9.1" target="_blank" rel="noopener noreferrer" class="btn btn-subtle btn-lg">
-                <svg class="ic"><use href="#g-external" /></svg>
                 <span>查看 Release</span>
               </a>
             </div>
@@ -1066,10 +935,10 @@
             <div class="checksum-box">
               <div class="cs-row">
                 <div class="cs-meta">
-                  <span class="cs-file">NyaLLM-0.9.1.apk · SHA-256</span>
-                  <code class="cs-hash">d093df11d4f90fff137f687e8e3ddd6fc640fb9ad5dc15e12447045b8a230d0f</code>
+                  <span class="cs-file">NyaLLM-1.0.2.apk · SHA-256</span>
+                  <code class="cs-hash">58896bea41ea8e1cb8c9b5fdab0ffdca917bef33f60b896af7cb4a63177df013</code>
                 </div>
-                <button type="button" class="mini-copy-btn" data-copy-text="d093df11d4f90fff137f687e8e3ddd6fc640fb9ad5dc15e12447045b8a230d0f" title="复制 APK SHA-256">
+                <button type="button" class="mini-copy-btn" data-copy-text="58896bea41ea8e1cb8c9b5fdab0ffdca917bef33f60b896af7cb4a63177df013" title="复制 APK SHA-256">
                   <svg class="ic"><use href="#g-copy" /></svg>
                 </button>
               </div>
@@ -1077,62 +946,22 @@
           </div>
 
           <div class="dl-right">
-            <h3>安装、迁移与备份说明</h3>
+            <h3>安装、Linux 容器与备份说明</h3>
             <ol class="guide-steps">
               <li>
-                <strong>0.4.x – 0.9.0 老用户直接覆盖</strong>
-                <span>沿用同一升级签名证书，直接覆盖安装即可保留本机对话与全部服务商配置；旧版「隐藏思考」会自动迁移为「自动显示」，也可按需切回。</span>
+                <strong>0.4.x – 1.0.1 老用户直接覆盖</strong>
+                <span>沿用同一升级签名证书，直接覆盖升级即可保留全部对话、项目、本机记忆、服务商配置与凭据。</span>
               </li>
               <li>
-                <strong>Ollama 局域网 / 本机免 Key 连接</strong>
-                <span>在设备或电脑启动 Ollama 并拉取模型后，于服务商页填写 <code>http://127.0.0.1:11434</code> 或局域网 IP 即可无 Key 拉取列表。</span>
+                <strong>启用本地 Linux 容器与极简工作模式</strong>
+                <span>在主页切至「工作」即可体验按需加载工具的极简模式；进入容器设置页可一键下载解压 Alpine 3.21 / Ubuntu 24.04.5 / Debian 12 / Arch ARM 官方 RootFS。</span>
               </li>
               <li>
                 <strong>ZIP 全量本地备份</strong>
-                <span>0.9.1 的 ZIP 备份完整包含消息、窗口布局、自定义背景图、附件与模型产物；API Key 与 MCP Token 始终只保存在你的手机本机。</span>
+                <span>支持将窗口布局、项目、消息、自定义背景、附件与图表产物打包为 ZIP；API Key、MCP Token 与用量记录始终留存在你的手机本机。</span>
               </li>
             </ol>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================================================================
-         SECTION 7: SITE DIRECTORY (SUBDIRECTORIES FOR USERS & BING)
-         ================================================================ -->
-    <section class="directory-strip-section" aria-label="站内专栏与子目录">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">SITE DIRECTORY · NYALLM.COM</span>
-          <h2 class="section-title">站内专题目录</h2>
-          <p class="section-sub">快速直达 APK 官方下载校验、完整功能文档、8 大模型服务商配置、版本日志与常见问题解答。</p>
-        </div>
-        <div class="directory-strip reveal">
-          <a href="/download/" class="dir-card">
-            <span class="dir-path">/download/</span>
-            <h3 class="dir-title">下载与 SHA-256 校验</h3>
-            <p class="dir-desc">获取 NyaLLM 0.9.1 官方 APK（7.61 MB）、镜像直链与覆盖升级说明。</p>
-          </a>
-          <a href="/features/" class="dir-card">
-            <span class="dir-path">/features/</span>
-            <h3 class="dir-title">核心能力与架构</h3>
-            <p class="dir-desc">斜切任务栏、双窗分屏、MCP 工具、SKILL.md、双搜索与安全护栏详解。</p>
-          </a>
-          <a href="/providers/" class="dir-card">
-            <span class="dir-path">/providers/</span>
-            <h3 class="dir-title">模型服务商与 Ollama</h3>
-            <p class="dir-desc">OpenAI、Gemini、DeepSeek、Kimi、Qwen、GLM 与本地 Ollama 接入清单。</p>
-          </a>
-          <a href="/changelog/" class="dir-card">
-            <span class="dir-path">/changelog/</span>
-            <h3 class="dir-title">版本更新日志</h3>
-            <p class="dir-desc">从 0.4.x 零 WebView 重构到 0.9.1 的完整迭代记录与发布包入口。</p>
-          </a>
-          <a href="/faq/" class="dir-card">
-            <span class="dir-path">/faq/</span>
-            <h3 class="dir-title">使用指南与常见问题</h3>
-            <p class="dir-desc">安装覆盖、API Key 隐私、局域网 Ollama、MCP 配置与手机助手答疑。</p>
-          </a>
         </div>
       </div>
     </section>
@@ -1144,16 +973,15 @@
       <div class="footer-brand">
         <img src="assets/brand/nyallm-launcher.png" alt="NyaLLM 图标" width="32" height="32" class="footer-icon" />
         <div>
-          <div class="footer-name">NyaLLM <span>0.9.1</span></div>
-          <p class="footer-note">白纸浅粉 · 纯原生安卓多窗 AI 工作台 · nyallm.com · by 小黑子打篮球hz</p>
+          <div class="footer-name">NyaLLM <span>1.0.2</span></div>
+          <p class="footer-note">白纸浅粉 · 纯原生安卓多窗 AI 工作台 · by 小黑子打篮球hz</p>
         </div>
       </div>
       <div class="footer-links">
-        <a href="/download/">下载中心</a>
-        <a href="/features/">核心能力</a>
-        <a href="/providers/">模型服务商</a>
-        <a href="/changelog/">更新日志</a>
-        <a href="/faq/">使用指南</a>
+        <a href="#workbench">工作台</a>
+        <a href="#features">核心能力</a>
+        <a href="#providers">服务商</a>
+        <a href="#download">下载校验</a>
         <a href="https://github.com/xiaoheiHZ/NyaLLM" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://ifdian.net/a/NyaLLM" target="_blank" rel="noopener noreferrer" class="footer-ifdian">
           <svg class="ic ic-xs"><use href="#g-bolt" /></svg>
